@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f5f5f5;
+            padding: 1em;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            color: #2d6197;
+        }
+
+        code {
+            background-color: #f8f8f8;
+            padding: 4px 8px;
+            color: #098257;
+            border-radius: 3px;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        blockquote {
+            font-family: 'Palatino', serif;
+            font-style: italic;
+            border-left: 4px solid #ddd;
+            padding-left: 1.5em;
+            color: #505050;
+        }
+
+        .note {
+            font-style: italic;
+            color: #900;
+        }
+
+        .hadley {
+            font-style: normal;
+            font-weight: bold;
+            color: #408026;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Chapter 3: Hercules' First Labor: Preprocessing and Cleaning Data</h1>
+
+<p>
+    In the realm of deep learning mathematics, this Python epic recalls the tale of Hercules, who was bestowed with the colossal task of facing twelve distinct labors. To most mortals, each challenge appeared insurmountable, but to Hercules, they embodied lessons of perseverance, expertise, and wisdom.
+</p>
+
+<h2>The Third Labor: Data Preprocessing and Cleaning</h2>
+
+<p>
+    In the previous chapter, we traversed the path of data exploration and visualization, leaving no stone of understanding unturned. Approaching the next labor, Hercules must confront the beast of preprocessing and cleaning data. Serving as a bridge to refine the raw information's integrity is halfway to unlocking the secrets of deep learning. Special guest <span class="hadley">Hadley Wickham</span>, a seasoned traveler in the realm of data science, now arrives to provide expert guidance in their sacred language.
+</blockquote>
+
+<p>
+    As with his previous labors, Hercules will face these obstacles as a learning opportunity to enhance his Python expertise. Aspiring Python heroes who walk in the footsteps of Hercules will master essential techniques for transforming unwieldy datasets into successes for deep learning models.
+</p>
+
+<blockquote>
+    "The ultimate goal of data transformation is not simply to clean data for cleanliness's sake, but to distill the raw materials into a more suitable substrate for analysis and learning." - <span class="hadley">Hadley Wickham</span>
+</blockquote>
+
+<p class="note">Note: The complete code sample in this chapter can be found in the accompanying Jupyter notebook.</p>
+
+<h3>From Python With Love: Supervised Learning and Unsupervised Learning in Preprocessing</h3>
+
+<p>
+    Hercules must choose wisely whether to apply supervised or unsupervised learning techniques when preprocessing their data. The former entails <em>automated etiquettes</em> to guide subsequent analyses, while the latter relies on <em>finding herculean patterns</em> buried within the data itself.
+</p>
+
+<pre><code>import pandas as pd
+import numpy as np
+from sklearn.preprocessing import LabelEncoder</code></pre>
+
+<p>
+    Armed with the teachings of <span class="hadley">Hadley Wickham</span> and the Python expertise accumulated thus far, the reader may embark upon the final stretch of this fascinating journey: witnessing Hercules vanquish the data preprocessing and cleaning challenge.
+</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f5f5f5;
+            padding: 1em;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            color: #2d6197;
+        }
+
+        code {
+            background-color: #f8f8f8;
+            padding: 4px 8px;
+            color: #098257;
+            border-radius: 3px;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        blockquote {
+            font-family: 'Palatino', serif;
+            font-style: italic;
+            border-left: 4px solid #ddd;
+            padding-left: 1.5em;
+            color: #505050;
+        }
+
+        .note {
+            font-style: italic;
+            color: #900;
+        }
+
+        .hadley {
+            font-style: normal;
+            font-weight: bold;
+            color: #408026;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Chapter 3: Hercules' First Labor: Preprocessing and Cleaning Data - A Greek Mythology Epic</h1>
+
+<p>
+    In a world ruled by the whims of gods and heroes, mighty Hercules stood as a symbol of strength, heroism, and learning. Having impressed the muses with his wisdom and perseverance, Hercules was tasked with 12 divine labors. Each labor represented the essential steps in mastering the ancient art of deep learning mathematics. Assisted by the renowned data sage, <span class="hadley">Hadley Wickham</span>, Hercules embarked on completing his first labor: Preprocessing and Cleaning Data.
+</p>
+
+<h2>The Oracle's Lament: Missing and Inconsistent Values</h2>
+
+<p>
+    Hercules heard rumors of the fabled Oracle's Lament, where inconsistency and uncertainty prevailed. As he journeyed to the temple, he encountered a disheveled dataset with missing and inconsistent values. To restore balance and spread wisdom, Hercules enlisted the help of <span class="hadley">Hadley Wickham</span> and embarked on a quest to cleanse and repair the data.
+</p>
+
+<pre><code>import pandas as pd
+import numpy as np
+
+# Repairing the dataset
+data_frame = data_frame.replace(r'\s+', np.nan, regex=True)
+data_frame.fillna(data_frame.mean(), inplace=True)</code></pre>
+
+<h2>Chronos' Confusion: Converting Time-Based Features</h2>
+
+<p>
+    As Hercules ventured forth, he encountered Chronos, the god of time, who bewailed the chaotic state of time-based data. Hercules, alongside the wise <span class="hadley">Hadley Wickham</span>, worked to convert the Unix timestamp features into human-readable date formats using Python's glorious powers.
+</p>
+
+<pre><code>from datetime import datetime
+
+# Converting Unix timestamp to datetime
+data_frame['datetime'] = data_frame['timestamp'].apply(lambda x: datetime.utcfromtimestamp(x))</code></pre>
+
+<h2>Athena's Wisdom: Categorical and Continuous Data Encoding</h2>
+
+<p>
+    Finally, Hercules sought Athena's divine wisdom to better understand the nature of categorical and continuous data. Under her watchful gaze, and with the aid of <span class="hadley">Hadley Wickham</span>, Hercules implemented Python's legendary One-Hot Encoding and Label Encoding techniques for data transformation.
+</p>
+
+<pre><code>from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+
+# Categorical data encoding
+data_frame = pd.get_dummies(data_frame, columns=['categorical_column'])
+
+# Continuous data encoding
+label_encoder = LabelEncoder()
+data_frame['encoded_column'] = label_encoder.fit_transform(data_frame['continuous_column'])</code></pre>
+
+<p>
+    Thus, with the final obstacle overcome, Hercules completed his first labor and restored the temple of data. As a testimony to the divine wisdom of <span class="hadley">Hadley Wickham</span>, the clean, useful dataset shone as a beacon for data scientists in their quest for deeper learning and understanding.
+</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide - Code Explanations</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f5f5f5;
+            padding: 1em;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            color: #2d6197;
+        }
+
+        code {
+            background-color: #f8f8f8;
+            padding: 4px 8px;
+            color: #098257;
+            border-radius: 3px;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        blockquote {
+            font-family: 'Palatino', serif;
+            font-style: italic;
+            border-left: 4px solid #ddd;
+            padding-left: 1.5em;
+            color: #505050;
+        }
+
+        .note {
+            font-style: italic;
+            color: #900;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Code Explanations: Resolving the Greek Mythology Epic</h1>
+
+<p>
+    In our epic journey with Hercules and Hadley Wickham, we witnessed a series of Python code snippets employed to resolve the challenges presented by the Greek Mythology epic. Let us examine, in detail, the solutions implemented to restore order and understanding to the realm of data.
+</p>
+
+<h2>Repairing the Dataset: Handling Missing and Inconsistent Values</h2>
+
+<p>
+    To replace missing and inconsistent values, Hercules applied the following code:
+</p>
+
+<pre><code>import pandas as pd
+import numpy as np
+
+# Repairing the dataset
+data_frame = data_frame.replace(r'\s+', np.nan, regex=True)
+data_frame.fillna(data_frame.mean(), inplace=True)</code></pre>
+
+<p>
+    Here, the <code>.replace()</code> method is called to replace any whitespace found in the dataset with NaN values, treating them as missing. Afterward, the <code>.fillna()</code> method replaces missing values (NaN) with the mean value of the respective column. This method offers a simple and effective solution for repairing datasets marred with missing or inconsistent data.
+</p>
+
+<h2>Transforming Time-Based Features</h2>
+
+<p>
+    To convert Unix timestamp features into a more human-readable date format, the following code was employed:
+</p>
+
+<pre><code>from datetime import datetime
+
+# Converting Unix timestamp to datetime
+data_frame['datetime'] = data_frame['timestamp'].apply(lambda x: datetime.utcfromtimestamp(x))</code></pre>
+
+<p>
+    In this code snippet, Hercules used the <code>datetime.utcfromtimestamp</code> function within a lambda which was applied to the entire timestamp column using the <code>apply()</code> method, effectively converting the Unix timestamps into human-readable datetime objects.
+</p>
+
+<h2>Encoding Categorical and Continuous Data</h2>
+
+<p>
+    For transforming categorical and continuous data, Hercules utilized One-Hot Encoding and Label Encoding techniques with the following code:
+</p>
+
+<pre><code>from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+
+# Categorical data encoding
+data_frame = pd.get_dummies(data_frame, columns=['categorical_column'])
+
+# Continuous data encoding
+label_encoder = LabelEncoder()
+data_frame['encoded_column'] = label_encoder.fit_transform(data_frame['continuous_column'])</code></pre>
+
+<p>
+    When encoding categorical data, the <code>pd.get_dummies()</code> function call is applied, creating a One-Hot Encoded dataframe for the specified column. For continuous data, we use the <code>LabelEncoder</code> class from the sklearn library. First, we create a LabelEncoder object (<code>label_encoder</code>). Then, we apply the <code>fit_transform()</code> method to the continuous column in question, resulting in an encoded column for further analysis.
+</p>
+
+<p>
+    Through these Python code snippets, our hero Hercules managed to resolve the challenges presented in the Greek Mythology epic, mastering the critical first step in deep learning: preprocessing and cleaning data.
+</p>
+
+</body>
+</html>

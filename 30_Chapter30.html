@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      color: #405060;
+      background: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #3b596d;
+      font-size: 2.2em;
+      margin: 30px 0 15px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #3c9471;
+      font-size: 1.6em;
+      margin: 20px 0 10px;
+    }
+
+    p {
+      font-family: 'Georgia', serif;
+      color: #405060;
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4a8ab4;
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+      background-color: #e4e4e4;
+      padding: 4px;
+      border-radius: 4px;
+    }
+  </style>
+  <title>Chapter 31. Deep Residual Networks: Enhancing Connections</title>
+</head>
+<body>
+
+<h1>Welcome to Chapter 31: Deep Residual Networks: Enhancing Connections</h1>
+<p>
+  Prepare thyselves, dear reader, as we embark upon a fresh journey of Herculean proportions. In our previous venture—<em>Chapter 30: Deep Residual Networks: Enhancing Connections</em>—we laid the foundation for understanding how Deep Residual Networks triumph over increasing depths.
+</p>
+
+<p>
+  With wisdom from the venerable <a href="https://en.wikipedia.org/wiki/Geoffrey_Hinton">Geoffrey Hinton</a>—the Zeus of deep learning, we shall delve deeper into the intricacies of these Residual Networks. This divine wisdom illuminates shortcuts that enable successful training and optimization, leapfrogging pitfalls that may otherwise plague us.
+</p>
+
+<h2>Incoming: Resurrected ResNet</h2>
+<p>
+  Heed our upcoming perils; we discuss the ResNet design, revealing how Haskell and Schmidhuber (2016) enhanced performance by heroic leaps and bounds. As epics tend to unravel, we shall examine the prodigious code that lays at its core—oh, wondrous <code>Python</code>—unlocking deep understanding and empowering untold potential.
+</p>
+
+<p>
+  Together, we shall surmount the Labors of Hercules, amassing innumerable skills to overcome any challenge Deep Learning Mathematics may present. Harnessing the indomitable spirit of the renowned Hercules, we shall conquer each obstacle in sequence, securing an unyielding comprehension of the labyrinthine networks.
+</p>
+
+<p>
+  So, without further ado, accompany us in Chapter 31, where ancient mysteries and modern mastery intertwine—buckle in for a rich adventure that blends timeless mythology and cutting-edge science like never before.
+</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            color: #405060;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #3b596d;
+            font-size: 2.2em;
+            margin: 30px 0 15px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #3c9471;
+            font-size: 1.6em;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            text-indent: 30px;
+            font-family: 'Georgia', serif;
+            color: #405060;
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4a8ab4;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background-color: #e4e4e4;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .epic {
+            background-color: #98cfe0;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+        }
+    </style>
+    <title>Chapter 31. Deep Residual Networks: Enhancing Connections</title>
+</head>
+<body>
+
+<h1>Chapter 31: Deep Residual Networks: Enhancing Connections</h1>
+
+<h2>The Epic with Special Guest Geoffrey Hinton</h2>
+
+<div class="epic">
+    <p>
+        In lands of formidable Folly and Stygian Strife,<br>
+        Our hero, noble Hercules, was called to arduous life.<br>
+        For deep in Hades' dreadful hold, a monster's tale was spun,<br>
+        Of Residual connections, born of Geoffrey Hinton.
+    </p>
+    
+    <p>
+        Guided by great Hinton's words, the colossus steeled his mind,<br>
+        Embarked upon the treacherous path, the network's truths to find,<br>
+        He sought the beasts of vanishing gradients, a fearsome foe,<br>
+        To help mankind uncover secrets hidden long ago.
+    </p>
+
+    <p>
+        "<a href="https://arxiv.org/abs/1512.03385">Deep Residual Learning for Image Recognition</a>," Hinton spoke the name,<br>
+        A paper penned and legendary, fueling eternal flame.<br>
+        The hero read and pondered on the sacred text,<br>
+        Unraveled ResNet's mysteries, and faced it unperplexed.
+    </p>
+
+    <p>
+        Quixotic were the layers deep, yet wise design prevailed,<br>
+        ResNet's strength in depth, its might and prowess so regaled.
+    </p>
+</div>
+
+<p>
+    Now, with the aid of wise Hinton and the unwavering spirit of Hercules, we tread into the heart of Deep Residual Networks. Like our mythic hero, we shall confront challenges in the form of vanishing gradients, carefully navigating the depths with newfound insight. Our victories, however, shall bring forth a unique prize—the unlocking of <code>Python</code> mastery and a profound understanding of the mathematics that underpin these networks.
+</p>
+
+<p>
+    Prepare to explore, learn, and conquer as you traverse through the labyrinthine architecture of ResNet—the culmination of your epic journey.
+</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            color: #405060;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #3b596d;
+            font-size: 2.2em;
+            margin: 30px 0 15px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #3c9471;
+            font-size: 1.6em;
+            margin: 20px 0;
+            text-align:center;
+        }
+
+        p {
+            text-indent: 30px;
+            font-family: 'Georgia', serif;
+            color: #405060;
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4a8ab4;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background-color: #e4e4e4;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .code_block {
+            font-family: 'Courier New', monospace;
+            background-color: #e4e4e4;
+            padding: 12px;
+            border-radius: 4px;
+            line-height: 1.5;
+            margin: 20px 0;
+            white-space: pre;
+        }
+    </style>
+    <title>30. Deep Residual Networks: Enhancing Connections - Code Explanation</title>
+</head>
+<body>
+
+<h1>Deep Residual Networks: Enhancing Connections - Code Explanation</h1>
+
+<h2>Unlocking Computational Might</h2>
+<p>
+    Our journey alongside Hercules and Geoffrey Hinton has brought us to the stage where we must now examine the code that tackles the deep entrails of Residual Networks (ResNets). By dissecting and understanding the foundations of ResNets, we shall emerge as Python-sovereigns and Deep Learning Architects.
+</p>
+
+<h2>Code Origins: The Heroic Blueprint</h2>
+<p>
+    The code we explore today originates within the sacred paper by He, Zhang, Ren, and Sun, entitled "<a href="https://arxiv.org/abs/1512.03385">Deep Residual Learning for Image Recognition</a>". Empowered by this blessed text, we delve into the inner workings of the ResNet architecture, destined to uncover the secrets of identity mappings and shortcut connections that form its backbone.
+</p>
+
+<div class="code_block">
+import torch
+import torch.nn as nn
+
+class BasicBlock(nn.Module):
+    def __init__(self, in_channels, out_channels, stride=1):
+        super(BasicBlock, self).__init__()
+        self.conv1 = nn.Conv2d(in_channels, out_channels, kernel_size=3, stride=stride, padding=1, bias=False)
+        self.bn1 = nn.BatchNorm2d(out_channels)
+        self.conv2 = nn.Conv2d(out_channels, out_channels, kernel_size=3, stride=1, padding=1, bias=False)
+        self.bn2 = nn.BatchNorm2d(out_channels)
+
+        self.shortcut = nn.Sequential()
+        if stride != 1 or in_channels != out_channels:
+            self.shortcut = nn.Sequential(
+                nn.Conv2d(in_channels, out_channels, kernel_size=1, stride=stride, bias=False),
+                nn.BatchNorm2d(out_channels)
+            )
+
+    def forward(self, x):
+        out = F.relu(self.bn1(self.conv1(x)))
+        out = self.bn2(self.conv2(out))
+        out += self.shortcut(x)
+        out = F.relu(out)
+        return out
+</div>
+
+<h2>Ancient Code Deciphered: The ResNet Basic Block</h2>
+<p>
+    The above <code>Python</code> code represents the heart of ResNet—the BasicBlock. The key components are as follows:
+</p>
+
+<ol>
+    <li>
+      The <code>__init__</code> method initializes our BasicBlock, defining two convolutional layers (conv1, conv2) followed by Batch Normalization (bn1, bn2), and managing the shortcut connection.
+    </li>
+    <li>
+      In the <code>forward</code> method, the input <code>x</code> undergoes two sets of convolutions, followed by batch normalization and ReLU activation. The result is added to the original input via the shortcut connection. Finally, a ReLU activation is applied to the resulting output.
+    </li>
+</ol>
+
+<p>
+    Graced by divine knowledge, we complete the Herculean journey, unlocking the enigma of Deep Residual Networks. The code in hand unveils wisdom and the architecture illuminates the path forward—all forged by those who dared to adventure into the heart of ResNets.
+</p>
+
+</body>
+</html>

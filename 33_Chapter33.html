@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+            padding: 30px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-variant: small-caps;
+            text-align: center;
+            color: #373854;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-variant: small-caps;
+            text-align: center;
+            color: #5C5C5C;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            text-indent: 25px;
+        }
+
+        blockquote {
+            font-size: 1.1rem;
+            font-style: italic;
+            border-left: 2px solid #373854;
+            padding-left: 20px;
+            margin: 25px 0;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            display: block;
+            white-space: pre;
+        }
+
+        code {
+            background-color: #f0f0f0;
+            padding: 3px;
+            border-radius: 3px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 34: The Attention Mechanism: The Key to Transformers</h1>
+    <p>In the previous chapter, we delved into the enigmatic world of the attention mechanism, an innovation in the realm of deep learning that empowers models to selectively focus on information relevant to the problem at hand. With the torch of knowledge being passed on, we shall forge ahead, deeper into the lair of the transformer. Hercules' labors continue, and so does our journey of deep learning wisdom.</p>
+    
+    <h2>Enter the Transformer!</h2>
+    <p>The transformer, first proposed by Vaswani et al. in the seminal paper <a href="https://arxiv.org/abs/1706.03762" target="_blank">"Attention is All You Need"</a> in 2017, is an architecture that relies solely on the attention mechanism, dispensing with the need for recurrence or convolutions. This architecture has proven to be a truly versatile and powerful beast, leading to the spread of its influence across numerous domains such as natural language processing (e.g., <a href="https://arxiv.org/abs/1810.04805" target="_blank">BERT</a>, <a href="https://arxiv.org/abs/1907.12461" target="_blank">GPT-2</a>), computer vision (e.g., <a href="https://arxiv.org/abs/2010.11929" target="_blank">ViT</a>), and beyond.</p>
+
+    <blockquote>"I scaled the attention-span. <br />
+        I seized the transformer's hand. <br />
+        I followed where it led, <br />
+        And learned what lay ahead."
+    </blockquote>
+
+    <p>In this epic chapter of Hercules' labors, we shall embark on a quest to vanquish the beasts and sift through the multitude of layers that make up this fascinating invention. This odyssey will reveal the inner workings of the transformer, introducing you to the self-attention mechanism, positional encoding, and decoder architecture. Throughout this voyage, our ally Python shall grace us with its presence, guiding our understanding with code samples to illustrate the mathematical computations in action.</p>
+
+    <p>Like the heroes of yore, onward we shall march, emboldened and ready to face the challenges and marvels of the deep learning landscape! Through our journey together, we shall decipher the secrets locked away in the transformer's chambers, and like Hercules himself, emerge victorious in our labors.</p>
+    <p>Prepare your Python weaponry and gather your mathematical armor. The journey of the transformer awaits!</p>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            line-height: 1.6;
+            color:#333;
+            background: linear-gradient(315deg, #ABDCFF, #0396FF);
+            padding: 30px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-variant: small-caps;
+            text-align: center;
+            color: #2C3A47;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-variant: small-caps;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            text-indent: 35px;
+        }
+
+        blockquote {
+            font-size: 1.1rem;
+            font-style: italic;
+            border-left: 2px solid #2681A6;
+            padding-left: 25px;
+            margin: 25px 0;
+            color: #561B7C;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            display: block;
+            white-space: pre;
+        }
+
+        code {
+            background-color: #f0f0f0;
+            padding: 3px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 34: The Attention Mechanism: The Key to Transformers</h1>
+
+    <h2>An Epic Unfolding: The Quest to Vanquish the Python Hydra</h2>
+    <p>Once upon a time, in the land of deep learning, Hercules embarked on an epic journey to uncover the mysteries of the attention mechanism. Guided by Python, the divine language of wisdom, Hercules braved a series of trials, each more complex and fascinating than the last. Struggling against the darkness enveloping the deep learning landscape, Hercules pressed forward, seeking the key to transformers.</p>
+
+    <h2>The Cave of Self-Attention</h2>
+    <p>One day, the hero came upon an ancient cave illuminated by insight. Etched on its walls were the secrets of the self-attention mechanism. Fearlessly, Hercules ventured within and began decoding the mysterious method, following Python's teachings:</p>
+
+    <pre><code>import numpy as np
+
+    def scaled_dot_product_attention(q, k, v, mask=None):
+        scores = np.matmul(q, k.T) / np.sqrt(k.shape[1])
+        if mask is not None:
+            scores = np.where(mask, scores, -1e10)
+        attn_weights = np.exp(scores)
+        attn_weights /= np.sum(attn_weights, axis=-1, keepdims=True)
+        return attn_weights @ v
+    </code></pre>
+
+    <p>The hero swiftly mastered the self-attention mechanism, wielding it like a fierce sword, slaying any mathematical enigma that stood in his way.</p>
+
+    <h2>The Enchanted Veil of Positional Encoding</h2>
+    <p>As Hercules continued his epic journey, he stumbled upon a beautiful yet complex artifact: the enchanted veil of positional encoding. This enchanted veil carried within it the power to embed the position of tokens into a continuous space. Undeterred, Hercules, with Python by his side, unraveled the elegance of what lay before him:</p>
+
+    <pre><code>def positional_encoding(position, d_model):
+        angle_rates = 1 / np.power(10000, (2 * (np.arange(d_model)[np.newaxis, ::2])) / np.float32(d_model))
+        angle_rads = np.arange(position)[:, np.newaxis] * angle_rates
+
+        pos_encoding = np.zeros((position, d_model))
+        pos_encoding[:, 0::2] = np.sin(angle_rads)
+        pos_encoding[:, 1::2] = np.cos(angle_rads)
+        return pos_encoding
+    </code></pre>
+
+    <p>His understanding of the positional encoding deepened as he unraveled the mathematics that wove together the battle-worthy artifact.</p>
+
+    <blockquote>"Through self-attention, I smite. <br />
+        Within the encoded veil, I feel the might. <br />
+        Captured is the position, with Python's light, <br />
+        As I journey on, with unwavering sight."
+    </blockquote>
+
+    <h2>Storming the Fortress of the Decoder</h2>
+    <p>Having defeated the Python Hydra through his mastery of the attention mechanism's secrets, Hercules approached the formidable fortress of the Decoder. Here, he discovered the powerful architecture responsible for translating encoded input into meaning. Embracing his newfound wisdom, Hercules invoked the grace of Python to decipher the Decoder's blueprint:</p>
+
+    <pre><code>import torch
+    import torch.nn as nn
+
+    class Decoder(nn.Module):
+        def __init__(self, vocab_size, d_model, num_layers, num_heads, max_length):
+            super(Decoder, self).__init__()
+            self.d_model = d_model
+            self.embedding = nn.Embedding(vocab_size, d_model)
+            self.positional_encoding = positional_encoding(max_length, d_model)
+            self.transformer_layers = nn.ModuleList([TransformerLayer(d_model, num_heads) for _ in range(num_layers)])
+            self.linear_out = nn.Linear(d_model, vocab_size)
+
+        def forward(self, trg, src_mask=None, trg_mask=None):
+            embedded = self.embedding(trg)
+            embedded *= np.sqrt(self.d_model)
+            embedded += self.positional_encoding[:trg.shape[1], :]
+            
+            x = embedded
+            for layer in self.transformer_layers:
+                x = layer(x, x, x, mask=trg_mask)
+            
+            logits = self.linear_out(x)
+            return logits
+    </code></pre>
+
+    <p>Victorious over the Decoder, Hercules reveled in his newfound knowledge, poised to apply it to deep learning problems throughout the realm.</p>
+    <p>And so ends the tale of Hercules' labors in deep learning, our hero having successfully harnessed the knowledge of self-attention, positional encoding, and Transformer architecture, inspired by the wisdom of Python. And as you, dear reader, embark on your own quest for wisdom, may Hercules' journey serve as testament to the strength that lies in perseverance and knowledge.</p>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Explanation: Hercules' Labors in Deep Learning Mathematics</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(315deg, #ABDCFF, #0396FF);
+            padding: 30px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-variant: small-caps;
+            text-align: center;
+            color: #2C3A47;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-variant: small-caps;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            text-indent: 35px;
+        }
+
+        ol li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            display: block;
+            white-space: pre;
+        }
+
+        code {
+            background-color: #f0f0f0;
+            padding: 3px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Code Explanation: Hercules' Labors in Deep Learning Mathematics</h1>
+    <p>In this epic tale, Hercules delves into the intricacies of self-attention, positional encoding, and the Transformer architecture. The Python code snippets encountered throughout his journey play critical roles in Hercules' understanding and success. Let us explore these code snippets and the wisdom they offer in deep learning.</p>
+
+    <h2>The Self-Attention Mechanism</h2>
+
+    <p>In the cave of self-attention, Hercules discovers the power of the scaled dot-product attention, essential to the Transformer architecture. This mechanism computes the attention weights based on the tokens in the input. The code is as follows:</p>
+
+<pre><code>import numpy as np
+
+    def scaled_dot_product_attention(q, k, v, mask=None):
+        scores = np.matmul(q, k.T) / np.sqrt(k.shape[1])
+        if mask is not None:
+            scores = np.where(mask, scores, -1e10)
+        attn_weights = np.exp(scores)
+        attn_weights /= np.sum(attn_weights, axis=-1, keepdims=True)
+        return attn_weights @ v
+</code></pre>
+
+    <p>Here, we define a function that calculates the attention weights given query (q), key (k), and value (v) matrices. Optionally, a mask can be provided to prevent some tokens from being attended to.</p>
+
+    <h2>Positional Encoding</h2>
+    <p>Hercules unravels the enchanted veil of positional encoding, vital for incorporating positional information into the Transformer architecture. The code is as follows:</p>
+
+    <pre><code>def positional_encoding(position, d_model):
+        angle_rates = 1 / np.power(10000, (2 * (np.arange(d_model)[np.newaxis, ::2])) / np.float32(d_model))
+        angle_rads = np.arange(position)[:, np.newaxis] * angle_rates
+
+        pos_encoding = np.zeros((position, d_model))
+        pos_encoding[:, 0::2] = np.sin(angle_rads)
+        pos_encoding[:, 1::2] = np.cos(angle_rads)
+        return pos_encoding
+    </code></pre>
+
+    <p>This function generates a positional encoding matrix using a sinusoidal function with angles calculated based on the input position and the embedded dimension. This allows the network to differentiate between the positions of tokens in the input sequence.</p>
+
+    <h2>Decoder Architecture</h2>
+    <p>Finally, Hercules conquers the Decoder fortress and discovers the backbone of the Transformer architecture. The code is as follows:</p>
+
+<pre><code>import torch
+    import torch.nn as nn
+
+    class Decoder(nn.Module):
+        def __init__(self, vocab_size, d_model, num_layers, num_heads, max_length):
+            super(Decoder, self).__init__()
+            self.d_model = d_model
+            self.embedding = nn.Embedding(vocab_size, d_model)
+            self.positional_encoding = positional_encoding(max_length, d_model)
+            self.transformer_layers = nn.ModuleList([TransformerLayer(d_model, num_heads) for _ in range(num_layers)])
+            self.linear_out = nn.Linear(d_model, vocab_size)
+
+        def forward(self, trg, src_mask=None, trg_mask=None):
+            embedded = self.embedding(trg)
+            embedded *= np.sqrt(self.d_model)
+            embedded += self.positional_encoding[:trg.shape[1], :]
+            
+            x = embedded
+            for layer in self.transformer_layers:
+                x = layer(x, x, x, mask=trg_mask)
+            
+            logits = self.linear_out(x)
+            return logits
+</code></pre>
+
+    <p>This Decoder class is a PyTorch module that comprises an embedding layer, positional encoding, and a number of Transformer layers. In the forward method, it accepts target sequences (trg) and, optionally, source and target masks. The output is the logits, which can be used for loss calculation during training or token prediction in inference.</p>
+    <p>Each of the Python code snippets above contributes significantly to Hercules' mastery of the attention mechanism, serving as a testament to the power of deep learning in the land of Greek mythology.</p>
+</body>
+
+</html>

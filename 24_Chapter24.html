@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide - Chapter 24: The Apples of the Hesperides - Gradient Boosting Applications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 20px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        ul {
+            margin-left: 40px;
+        }
+
+        .code {
+            background-color: rgba(200, 200, 200, 0.4);
+            padding: 10px;
+            font-family: monospace;
+            border-radius: 3px;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 24: The Apples of the Hesperides - Gradient Boosting Applications</h1>
+
+    <p>In the marvelous world of Deep Learning Mathematics, stories of astounding triumphs and fulfilling challenges can be found. Our valiant hero, Hercules, embarks upon his 24th labor: to gather the Apples of the Hesperides. These glistening spheres of knowledge hold the secrets to one of the most powerful techniques in machine learning: Gradient Boosting. As we accompany Hercules, we too shall delve into the plethora of Gradient Boosting applications and decipher the practicalities of Python programming as heroically as one can.</p>
+
+    <h2>Why Gradient Boosting Matters</h2>
+
+    <p>As Hercules learned with his earlier labors, no ordinary approach can solve the unique problems he encountered in his epic quest. Similarly, Gradient Boosting is a mighty ensemble learning technique that builds a strong, robust model by combining numerous weak learners through an iterative process. This results in a final delicate balance, measured by a differentiable loss function, and yields surprising accuracy &mdash; like finding the ripest and most resplendent apple amid a formidable grove of vibrant hues.</p>
+
+    <h2>The Apples of the Hesperides: Applications</h2>
+
+    <p>The magic of these potent apples can be applied to various realms of knowledge. As we journey through the intricate labyrinth of Gradient Boosting Applications, we shall find that such applications abound:</p>
+
+    <ul>
+        <li>Classification: Discriminating precious golden apples from mere mortal fruits.</li>
+        <li>Regression: Predicting the sweetness index of the apples, empowering their nutritional potency.</li>
+        <li>Hypothesis testing: Identifying the influence of individual apple strains upon the overall harvest.</li>
+        <li>Feature importance: Uncovering the true determinants behind an apple's divine properties.</li>
+    </ul>
+
+    <p>As we delve into each application, guided by the wisdom of the skillful Python programming language, we will strengthen our understanding of Gradient Boosting and find new ways to harness its immense computational prowess. As the tale unfurls, the incorporated code samples will both illuminate and elucidate the concepts being explored, enriching our understanding of the mighty Gradient Boosting and its applications.</p>
+
+    <h2>A Python Odyssey Unfolds</h2>
+
+    <p>Empowering each of our hero's steps through this epic journey, Python will stand by us as we traverse these digital landscapes. Already a trusted ally to Hercules during his previous labors, Python will be our flickering torch and steadfast shield. Regarded for their pedagogical insights, the foundational bricks of this thrilling tale will be laid by the likes of Dr. Seuss and Andrew Ng, constructing the ultimate story that encompasses both knowledge and narrative.</p>
+
+    <p>Onward, then, to the Apple Grove of the Hesperides, as we uncover the Gradient Boosting Applications that await. Like the golden apples that Hercules sought, may we too achieve unparalleled achievements, discovering insights that dance like playful nymphs upon the wind, clinging to their sacred branches in this memorable sojourn.</p>
+
+    <div class="code">
+        import numpy as np<br>
+        import pandas as pd<br>
+        from sklearn.ensemble import GradientBoostingClassifier<br>
+        from sklearn.metrics import confusion_matrix, accuracy_score<br>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide - Chapter 24: The Apples of the Hesperides - Gradient Boosting Applications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 20px;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        ul {
+            margin-left: 40px;
+        }
+
+        .code {
+            background-color: rgba(200, 200, 200, 0.4);
+            padding: 10px;
+            font-family: monospace;
+            border-radius: 3px;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 24: The Apples of the Hesperides - Gradient Boosting Applications</h1>
+
+    <h2>A Mythical Journey Begins</h2>
+
+    <p>As our mythical hero Hercules embarks on his quest to acquire the Apples of the Hesperides, he first seeks the wisdom of the Oceanid nymphs, full of knowledge about the enchanting grove of the Hesperides. These nymphs heed the call and reveal a hidden path to that sacred garden. Along with the nymphs' guidance, a powerful Python joins Hercules in his adventure, casting its illuminating glow upon the path ahead.</p>
+
+    <h2>Unlocking the Wisdom of Medusa's Decision Trees</h2>
+
+    <p>As Hercules ventures deeper into the grove, he encounters a stone statue of Medusa, her ever-watchful gaze fixed upon clusters of decision trees. Hercules realizes that unlocking the secrets of these trees will enable him to wield the power of Gradient Boosting.</p>
+
+    <p>The nymphs whisper an incantation to Hercules, who speaks the words aloud, allowing him to visualize the decision trees' split points, criteria, and leaves. As Hercules observes the dancing patterns, he demands that the Python predict new instances from these trees:</p>
+
+    <div class="code">
+        from sklearn.tree import DecisionTreeClassifier<br>
+        import numpy as np<br>
+<br>
+        decision_tree = DecisionTreeClassifier(max_depth=2)<br>
+        search_space = np.linspace(-10, 10, 100).reshape(-1, 1)<br>
+    </div>
+
+    <h2>Crowning the Golden Apple of Classification</h2>
+
+    <p>Hercules, now armed with knowledge, faces his first challenge: the classification of the golden apples. He finds that the grove's apples bear a resemblance to their mortal counterparts, but only the truly divine can strengthen the gods' immortality.</p>
+
+    <p>Python slithers closer, whispering the chant of gradient boosting:</p>
+
+    <div class="code">
+        from sklearn.datasets import make_classification<br>
+        from sklearn.ensemble import GradientBoostingClassifier<br>
+<br>
+        X, y = make_classification(n_samples=1000, random_state=42)<br>
+        gbc = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0, random_state=42)<br>
+        gbc.fit(X, y)<br>
+    </div>
+
+    <h2>Embracing the Winds of Fidelity in Regression</h2>
+
+    <p>Having conquered classification, Hercules must now predict the arcane sweetness index of each golden apple, a measure of its power. The winds of fidelity guide his path as he learns to use gradient boosting for regression.</p>
+
+    <p>Like the whispers of the zephyr, Python gently reminds our warrior of the code to perform gradient boosted regression:</p>
+
+    <div class="code">
+        from sklearn.datasets import make_regression<br>
+        from sklearn.ensemble import GradientBoostingRegressor<br>
+<br>
+        X, y = make_regression(n_samples=1000, random_state=42)<br>
+        gbr = GradientBoostingRegressor(n_estimators=100, learning_rate=0.1, max_depth=1, random_state=42)<br>
+        gbr.fit(X, y)<br>
+    </div>
+
+    <h2>The Hypothesis and the Serpent's Gaze</h2>
+
+    <p>As Hercules strides towards the climactic final challenge, he feels the piercing gaze of Python upon him, urging him to use the Gradient Boosting Applications for hypothesis testing. Embracing the serpent's knowledge, Hercules takes the reins of hypothesis testing to further unravel the mystical power of the apples.</p>
+
+    <p>With Python's unwavering guidance, Hercules calls forth the code to test his hypothesis:</p>
+
+    <div class="code">
+        import scipy.stats as stats<br>
+<br>
+        H0_dist, H1_dist = np.random.normal(0, 1, 30), np.random.normal(0.5, 1, 30)<br>
+        t_statistic, p_value = stats.ttest_ind(H0_dist, H1_dist)<br>
+    </div>
+
+    <h2>Feature Importance: The Unveiling</h2>
+
+    <p>At long last, our bold hero arrives at the culmination of his trial: to unveil the true determinants behind the golden apples' enigma. He realizes that discerning the power of these apples requires ascertaining the most important features that separate them from the rest.</p>
+
+    <p>Python, in its scintillating wisdom, unveils the ancient code:</p>
+
+    <div class="code">
+        importances = gbc.feature_importances_<br>
+    </div>
+
+    <p>With the Python's guidance and the nymphs' wisdom, Hercules unravels the secrets of the sacred grove. He applies his mastery of Gradient Boosting Applications within the realm of Classification, Regression, Hypothesis Testing, and Feature Importance, safeguarding the ancient knowledge for generations to come.</p>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Mythology Code Explanations: Hercules' Labors in Deep Learning Mathematics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 20px;
+            text-align: justify;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        ul {
+            margin-left: 40px;
+        }
+
+        .code {
+            background-color: rgba(200, 200, 200, 0.4);
+            padding: 10px;
+            font-family: monospace;
+            border-radius: 3px;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>Greek Mythology Code Explanations:</h1>
+    <h1>Hercules' Labors in Deep Learning Mathematics</h1>
+
+    <h2>Decision Trees Visualization</h2>
+
+    <p>Hercules begins his journey by unlocking the wisdom of Medusa's decision trees. This enchantment allows him to visualize and predict new instances using the following code:</p>
+
+    <div class="code">
+        from sklearn.tree import DecisionTreeClassifier<br>
+        import numpy as np<br>
+<br>
+        decision_tree = DecisionTreeClassifier(max_depth=2)<br>
+        search_space = np.linspace(-10, 10, 100).reshape(-1, 1)<br>
+    </div>
+
+    <p>Here, he imports the necessary libraries and creates a simple decision tree classifier. The search_space variable defines a search space from -10 to 10, containing 100 evenly spaced points.</p>
+
+    <h2>Gradient Boosting for Classification</h2>
+
+    <p>Moving forward, Hercules enters the realm of classification with the power of gradient boosting. He applies this knowledge to separate the true divine golden apples:</p>
+ 
+    <div class="code">
+        from sklearn.datasets import make_classification<br>
+        from sklearn.ensemble import GradientBoostingClassifier<br>
+<br>
+        X, y = make_classification(n_samples=1000, random_state=42)<br>
+        gbc = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0, random_state=42)<br>
+        gbc.fit(X, y)<br>
+    </div>
+
+    <p>In this code, Hercules generates a dataset for classification using make_classification. He creates a GradientBoostingClassifier, and then fits the model using the generated data.</p>
+
+    <h2>Gradient Boosting for Regression</h2>
+
+    <p>With the winds of fidelity stirring, Hercules masters the art of gradient boosting to predict the arcane sweetness index of each golden apple:</p>
+
+    <div class="code">
+        from sklearn.datasets import make_regression<br>
+        from sklearn.ensemble import GradientBoostingRegressor<br>
+<br>
+        X, y = make_regression(n_samples=1000, random_state=42)<br>
+        gbr = GradientBoostingRegressor(n_estimators=100, learning_rate=0.1, max_depth=1, random_state=42)<br>
+        gbr.fit(X, y)<br>
+    </div>
+
+    <p>Here, Hercules generates a dataset for regression using make_regression. He then creates a GradientBoostingRegressor object and fits the model using the generated data.</p>
+
+    <h2>Hypothesis Testing</h2>
+
+    <p>The serpent's gaze awakens the power within Hercules. He applies the Gradient Boosting Applications to conduct hypothesis testing:</p>
+
+    <div class="code">
+        import scipy.stats as stats<br>
+<br>
+        H0_dist, H1_dist = np.random.normal(0, 1, 30), np.random.normal(0.5, 1, 30)<br>
+        t_statistic, p_value = stats.ttest_ind(H0_dist, H1_dist)<br>
+    </div>
+
+    <p>This code imports the necessary library for hypothesis testing. Hercules creates two random distributions using the normal function. Then, he employs the t-test to analyze these distributions, obtaining the t-statistic and p-value.</p>
+
+    <h2>Feature Importance Evaluation</h2>
+
+    <p>Finally, Hercules embarks on the culmination of his journey as he reveals the most critical features behind the golden apples' enigma:</p>
+
+    <div class="code">
+        importances = gbc.feature_importances_<br>
+    </div>
+
+    <p>By accessing the 'feature_importances_' attribute of the gradient boosting classifier, Hercules unveils the importance of each feature in the dataset, thus unraveling the enigmas behind the golden apples' divine powers.</p>
+    
+</body>
+</html>

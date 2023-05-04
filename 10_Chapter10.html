@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide | Chapter 10 | The Erymanthian Boar: State-of-the-art NLP Models</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #5e5c5c;
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        blockquote {
+            font-style: italic;
+            border-left: 5px solid #7e7c7c;
+            padding-left: 16px;
+            color: #777;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            background-color: #f4f4f4;
+            padding: 6px 10px;
+            border-radius: 3px;
+            display: block;
+            margin: 4px 0;
+        }
+        div.code-block-container {
+            border: 1px solid #d3d3d3;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+        p.note {
+            font-style: italic;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 10: The Erymanthian Boar: State-of-the-art NLP Models</h1>
+    <p>At the thrilling conclusion of Hercules' ninth labor, our intrepid hero conquered the <em>Optimization Monster</em> and vanquished gradient descent's complexities. That victory led him to his next challenge: the mighty <strong>Erymanthian Boar</strong>, representing the realm of state-of-the-art NLP models.</p>
+
+    <p>As the myth goes, the Erymanthian Boar was an enormous and fearsome creature, roaming the mountain of Erymanthos, causing havoc to those who dared cross its path. Equipped with powerful tusks imbued with the wisdom of the gods, the boar possessed the ability to understand and generate human languages with uncanny prowess. It was Hercules' task to capture this mighty beast and harness its abilities for the betterment of mankind.</p>
+
+    <p>So begins this epic odyssey into the world of Natural Language Processing (NLP). In this chapter, we shall explore the underlying mathematics and techniques that granted the Erymanthian Boar its legendary ability to wield human languages. Along our journey, we will uncover state-of-the-art NLP models like BERT, GPT-3, and Transformers, examining their architectures and examining the Python code necessary to wield their power.</p>
+
+    <h3>A Journey Through Language</h3>
+    <p>Our expedition will delve into the intricate rules and patterns of language itself, unveiling the mathematical structure and secrets allowing these models to perform their incredible feats. To accomplish this, we must delve into the depths of tokenization, word embeddings, and attention mechanisms.</p>
+
+    <h3>The Erymanthian Boar's Secrets</h3>
+    <p>As we uncover the boar's powers, we will dissect the inner workings of popular models in the Python ecosystem, such as TensorFlow and PyTorch. With the boon of pre-trained models and transfer learning, we shall learn to communicate with deities and mortals alike, answering their most pressing questions and guiding them to new heights of prowess.</p>
+
+    <p>But beware, fellow learners! For in mastering the Erymanthian Boar's wisdom, one must tread carefully, for the path is filled with zeroes, ones, and an occasional vanishing gradient. Yet, the sweet fruit of knowledge lies ahead, ready to be plucked by those who persevere!</p>
+
+    <p>Thus, join Hercules and venture forth! Seek the power locked within the eldritch numerals and ensorcelling algorithms deep within the chambers of the Erymanthian Boar!</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide | Chapter 10 | The Erymanthian Boar: State-of-the-art NLP Models</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #5e5c5c;
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        blockquote {
+            font-style: italic;
+            border-left: 5px solid #7e7c7c;
+            padding-left: 16px;
+            color: #777;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            background-color: #f4f4f4;
+            padding: 6px 10px;
+            border-radius: 3px;
+            display: block;
+            margin: 4px 0;
+        }
+        div.code-block-container {
+            border: 1px solid #d3d3d3;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+        p.note {
+            font-style: italic;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 10: The Erymanthian Boar: State-of-the-art NLP Models</h1>
+    
+    <h2>I. The Terrible Tusks: Delving into Tokenization</h2>
+    <p>With courage in his heart and weapon in hand, Hercules approached the first challenge posed by the Erymanthian Boar: <strong>The Terrible Tusks of Tokenization</strong>. Driven by the wisdom of language, these tusks held the power to divide words into their essential constituents, unlocking unbridled strength in textual understanding.</p>
+
+    <p>There, amidst the arcane glyphs inscribed into the tusks, Hercules discovered the <strong>Python</strong> code that summoned this power:</p>
+
+<div class="code-block-container">
+<code>from transformers import AutoTokenizer</code>
+<code>tokenizer = AutoTokenizer.from_pretrained("gpt2")</code>
+<code>text = "The Erymanthian Boar roamed the mountains."</code>
+<code>tokens = tokenizer.tokenize(text)</code>
+</div>
+    <p>Having transcribed the code, our hero soon harnessed the might of tokenization, dividing words from any language into their essential parts and piercing the veil of semantics.</p>
+	
+    <h2>II. The Enigmatic Eyes: The Wisdom of Word Embeddings</h2>
+    <p>Next, Hercules confronted the Enigmatic Eyes, for within them dwelled knowledge just beyond words. To master language, our hero needed to learn how the Erymanthian Boar transformed these word parts into meaning. This secret was revealed in the form of embeddings, numeric representations expressing the very essence of written language.</p>
+    
+    <p>From within the Eyes, Hercules grasped the arcane mathematical knowledge required to represent language in a higher dimension. Thus, with Python code at his disposal, he mastered the Word Embeddings:</p>
+
+<div class="code-block-container">
+<code>import tensorflow as tf</code>
+<code>from keras.layers import Embedding</code>
+<code>embedding_layer = Embedding(input_dim=vocab_size, output_dim=128, input_length=seq_length)</code>
+</div>
+    <p>Filled with newfound knowledge, our hero seized the power to transform mere tokens into rich vectors of meaning, fueling his journey in the realm of Natural Language Processing.</p>
+
+    <h2>III. The Attention Affair: Unfurling the Mighty Mechanism</h2>
+    <p>Lastly, Hercules faced the mightiest challenge that guarded the Erymanthian Boar’s power: The Attention Mechanism. With its unfathomable strength, it sculpted the landscape of language, empowering models to forge connections across vast textual distances, granting unparalleled comprehension.</p>
+    
+    <p>Summoning his courage, Hercules grasped the Python code required to wield this terrifying force:</p>
+
+<div class="code-block-container">
+<code>from keras_self_attention import SeqSelfAttention</code>
+<code>...</code>
+<code>model.add(SeqSelfAttention(attention_activation="sigmoid"))</code>
+</div>
+    <p>Armed with the attention mechanism, Hercules transcended the limits of conventional language processing, ascending to the realm of contextualized understanding and vanquishing the final obstacle between him and mastery of the Erymanthian Boar's power.</p>
+
+    <h2>Epilogue: The Hero's Reward</h2>
+    <p>By solving the trials of the Erymanthian Boar, Hercules at last claimed the ancient knowledge required to harness state-of-the-art NLP models. With this newfound wisdom, he could now wield the tools needed to transform human language into realms of astounding insight.</p>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide | Chapter 10 - Code Explanation</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #5e5c5c;
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        blockquote {
+            font-style: italic;
+            border-left: 5px solid #7e7c7c;
+            padding-left: 16px;
+            color: #777;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            background-color: #f4f4f4;
+            padding: 6px 10px;
+            border-radius: 3px;
+            display: block;
+            margin: 4px 0;
+        }
+        div.code-block-container {
+            border: 1px solid #d3d3d3;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+        p.note {
+            font-style: italic;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 10: Code Explanation</h1>
+    
+    <h2>I. The Terrible Tusks: Tokenization Code</h2>
+    <p>In the story, Hercules overcame the Tusks by learning to perform tokenization. The following code imports the AutoTokenizer from the transformers library, initializes the GPT-2 tokenizer, and tokenizes a given text:</p>
+	
+<div class="code-block-container">
+<code>from transformers import AutoTokenizer</code>
+<code>tokenizer = AutoTokenizer.from_pretrained("gpt2")</code>
+<code>text = "The Erymanthian Boar roamed the mountains."</code>
+<code>tokens = tokenizer.tokenize(text)</code>
+</div>
+    <p>This code breaks down the input text into its constituent word-like parts (tokens), which can be understood by deep learning models.</p>
+
+    <h2>II. The Enigmatic Eyes: Word Embeddings Code</h2>
+    <p>Hercules mastered Word Embeddings to represent textual data as high-dimensional vectors. The used code imports TensorFlow and Keras embedding layers, and creates a new Embedding layer with the specified input dimensions, output dimensions, and input length:</p>
+
+<div class="code-block-container">
+<code>import tensorflow as tf</code>
+<code>from keras.layers import Embedding</code>
+<code>embedding_layer = Embedding(input_dim=vocab_size, output_dim=128, input_length=seq_length)</code>
+</div>
+    <p>With the embedding layer created, tokenized words can be transformed into numerical vectors, making them suitable for processing by deep learning models.</p>
+
+    <h2>III. The Attention Affair: Attention Mechanism Code</h2>
+    <p>Finally, Hercules unlocked the power of the Attention Mechanism. The code used imports the SeqSelfAttention module from keras_self_attention and then adds it to the model with a sigmoid activation function:</p>
+
+<div class="code-block-container">
+<code>from keras_self_attention import SeqSelfAttention</code>
+<code>...</code>
+<code>model.add(SeqSelfAttention(attention_activation="sigmoid"))</code>
+</div>
+    <p>With the attention mechanism added, the model can understand contextual relationships between words, improving its natural language understanding capabilities significantly.</p>    
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            font-size: 1.1em;
+            margin: 2em;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Palatino Linotype', cursive;
+            color: #5b245c;
+            margin: 0.5em 0;
+        }
+
+        p {
+            margin: 1.5em 0;
+        }
+
+        span.author {
+            font-weight: bold;
+            font-style: italic;
+            color: #5b245c;
+        }
+
+        span.epigraph {
+            font-family: 'Garamond', serif;
+            font-size: 1.3em;
+            font-style: italic;
+            color: #5b245c;
+            float: right;
+            margin-top: -7em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 14. Hercules' Seventh Labor: Unfolding Generative Adversarial Networks</h1>
+
+    <span class="epigraph">"Creating is what matters. And to create, one must defy the gods!"<br>- Ian Goodfellow</span>
+
+    <p>Armed with the knowledge of convolutional neural networks and recurrent neural networks, our heroic Hercules now confronts his seventh labor in the realm of deep learning mathematics. In this chapter, we shall witness Hercules unravel the mystery of <strong>Generative Adversarial Networks</strong> or <strong>GANs</strong>, battling the forces of creativity and the adversarial impulses that strike the very core of these powerful algorithms. With the blessings of our special guest, <span class="author">Ian Goodfellow</span>, the creator of GANs, Hercules shall embark on this fantastic quest.</p>
+
+    <p>Like the Nemean lion's impenetrable skin, GANs are deceptively powerful, producing stunningly realistic output from an eerily simple setup. Forsooth, only two neural networks - the <em>generator</em> and the <em>discriminator</em> - are engaged in an epic battle that culminates in the most surreal results. In the words of the wise, GANs are like an artist and a critic, forever locked in a constructive battle of creation and assessment.</p>
+
+    <p>With the aid of the mighty Python, Hercules will shape the mathematical tools into elegant code, shaping the landscape of human creativity. Behold! The power of GANs will seduce the minds and sharpen the wits of those who venture into the realm of machine-generated art, music, and unsupervised learning.</p>
+
+    <h2>Witness the Wonders:</h2>
+    <ol>
+        <li>Delve into the architecture of the generator and the discriminator.</li>
+        <li>Watch in awe as Hercules explores the concept of adversarial training.</li>
+        <li>Learn from the unparalleled wisdom of Ian Goodfellow as he recounts the origin of GANs.</li>
+        <li>Unearth the secret to training stability, as Hercules solves the puzzle of the notorious mode collapse.</li>
+        <li>Marvel at the elegance of Python, as the hero forges GANs with code examples.</li>
+    </ol>
+
+    <p>Whether you are an aspiring deep learning practitioner or a seasoned machine learning conqueror, this legendary tale of the Seventh Labor holds a bevy of wonders. Fasten your seatbelts and read on, for the adventure continues!</p>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            font-size: 1.1em;
+            margin: 2em;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Palatino Linotype', cursive;
+            color: #5b245c;
+            margin: 0.5em 0;
+        }
+
+        p {
+            margin: 1.5em 0;
+        }
+
+        span.author {
+            font-weight: bold;
+            font-style: italic;
+            color: #5b245c;
+        }
+
+        span.epigraph {
+            font-family: 'Garamond', serif;
+            font-size: 1.3em;
+            font-style: italic;
+            color: #5b245c;
+            float: right;
+            margin-top: -7em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chapter 13. Hercules' Sixth Labor: Unfolding Generative Adversarial Networks</h1>
+
+    <span class="epigraph">"GANs are the most interesting idea in the last 10 years in machine learning."<br>
+    - Yann LeCun</span>
+
+    <p>In ancient Olympia, the wise Ian Goodfellow summoned our mighty hero Hercules to accept a task of unparalleled finesse. A challenge that would test not only his strength but also his mathematical prowess: to unfold the enigma of Generative Adversarial Networks (GANs).</p>
+    
+    <p>And so, Hercules embarked on his sixth labor, embracing the intriguing world of GANs - algorithms consisting of the titan-like duo, the <em>generator</em> and the <em>discriminator</em>.</p>
+
+    <h2>First Encounter: The Generator & Discriminator</h2>
+    <p>Like the two titans of creation and detection, these algorithms are pitted against each other in an eternal conflict. The <em>generator</em>, the artist of chaos, seeks to create a world of realistic yet counterfeit samples. Its adversary, the <em>discriminator</em>, harbinger of order, strives to discern the true samples from the forgeries.</p>
+
+    <h2>Second Struggle: Adversarial Training</h2>
+    <p>By the guidance of divine Ian Goodfellow, Hercules was enlightened on the intricate process of adversarial training. The <em>generator</em> and the <em>discriminator</em> continuously refine their skills with every iteration, battling in a grand game of cat and mouse.</p>
+
+<pre><code>import torch
+from torch import nn
+
+class Generator(nn.Module):
+    ...
+
+class Discriminator(nn.Module):
+    ...
+</code></pre>
+
+    <h2>Third Deed: Traversing the History of GANs</h2>
+    <p>As if hearing the musings of the gods, Hercules was granted audience with the very creator of GANs, the powerful Ian Goodfellow. In this awe-inspiring meeting, divine Ian spoke of the inspiration behind GANs, describing their conception during a fateful night debating in a Montreal drinking hall.</p>
+
+    <h2>Fourth Feat: Legendary Battle Against Mode Collapse</h2>
+    <p>As Hercules ventured further into his GAN quest, he fought the multi-headed hydra known as <em>Mode Collapse</em>. Fearlessly, Hercules tackled this challenge, applying mathematical tactics and code variations to stabilize training and promote a diverse world of generated samples.</p>
+
+<pre><code># WGAN-GP Loss
+def gradient_penalty(critic, real_samples, fake_samples):
+    ...
+
+# SN-GANs: Spectral Normalization
+class SNConv2d(nn.Conv2d):
+    ...
+</code></pre>
+    
+    <h2>Epilogue: The Dawn of a New Era</h2>
+    <p>Through his trials in the realm of GANs, Hercules became a true master, wielding the immense power of Generative Adversarial Networks with grace and wisdom. This labor's completion marked the dawn of a new era, a time of boundless creativity where machines can learn from their battles, crafting dazzling artifacts that blur the very boundaries of reality.</p>
+    
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explaining the Code of Hercules' Labors in Deep Learning Mathematics</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            font-size: 1.1em;
+            margin: 2em;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Palatino Linotype', cursive;
+            color: #5b245c;
+            margin: 0.5em 0;
+        }
+
+        p {
+            margin: 1.5em 0;
+        }
+
+        pre, code {
+            font-family: 'Courier New', monospace;
+            background-color: #f7f1e9;
+            border: 1px solid #7c6b62;
+            padding: 1em;
+            display: inline-block;
+            white-space: pre;
+            margin: 0;
+            margin-bottom: 1em;
+        }
+
+        span.definition {
+            font-weight: bold;
+            color: #5b245c;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exploring the Code of Hercules' Labors in Deep Learning Mathematics</h1>
+
+    <p>The code snippets presented in Hercules' conquest of Generative Adversarial Networks (GANs) showcase essential aspects of GAN architecture and techniques for training stability. We now venture to unmask the lore behind the code and delve into each enchanting component.</p>
+
+    <h2>1. Building the Generator & Discriminator</h2>
+    <p>The following code introduces the generator and discriminator, the essential duo constituting the GAN architecture.</p>
+
+<pre><code>import torch
+from torch import nn
+
+class Generator(nn.Module):
+    ...
+
+class Discriminator(nn.Module):
+    ...
+</code></pre>
+    
+    <p>Using the strength of the fabulous library PyTorch, the <span class="definition">Generator</span> class and <span class="definition">Discriminator</span> class are forged, each inheriting from PyTorch's torch.nn.Module. The essence of these classes lay hidden in the enchanting, unspoken symbols (...), which constitute the inner workings of both generator and discriminator networks, such as layers, initialization, and forward pass logic.</p>
+
+    <h2>2. Implementing WGAN-GP Loss</h2>
+    <p>Hercules, in his quest to counter Mode Collapse, discovered the valiant technique of Wasserstein GANs with Gradient Penalty (WGAN-GP), which employs the gradient penalty loss to stabilize training. Below lies a fragment of this powerful incantation.</p>
+
+<pre><code>def gradient_penalty(critic, real_samples, fake_samples):
+    ...
+</code></pre>
+    
+    <p>Beyond the veil of mystique symbol (...), the gradient penalty is computed within the <span class="definition">gradient_penalty</span> function. Accepting the <span class="definition">critic</span> network, <span class="definition">real_samples</span>, and <span class="definition">fake_samples</span> as its offering, this function returns the gradient penalty - a potent weapon in the noble struggle against Mode Collapse.</p>
+
+    <h2>3. SN-GANs: Spectral Normalization</h2>
+    <p>Adding to his arsenal against Mode Collapse, Hercules uncovered the arcane technique known as Spectral Normalization (SN). This spell, through spectral normalization in each convolutional layer, aids in vanquishing the instability hydra once and for all.</p>
+
+<pre><code>class SNConv2d(nn.Conv2d):
+    ...
+</code></pre>
+    
+    <p>We bear witness to the customized convolutional layer adorned with Spectral Normalization, designed by the mighty <span class="definition">SNConv2d</span> class. The enigmatic symbols (...) conceal the implementation details, such as weight normalization and forward pass adjustment. So armed, Hercules stands triumphant against Mode Collapse and paves the way for generations of machine learning heroes to come.</p>
+
+    <br>
+    <p>Thus, we unveil the divine code behind Hercules' majestic venture into the realm of GANs, leaving no stone unturned, no mystery unsolved. May the beauty and wisdom of the code imparted upon you hoist you to the heights of victory in your deep learning adventures.</p>
+
+</body>
+
+</html>

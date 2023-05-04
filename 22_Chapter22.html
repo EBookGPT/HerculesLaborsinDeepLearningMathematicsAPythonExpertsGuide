@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        body {
+            font-family: 'Tangerine', serif;
+            font-size: 48px;
+            color: #483d8b;
+            text-align: justify;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 72px;
+            color: #8b0000;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        div.intro {
+            font-size: 36px;
+            color: #6a5acd;
+        }
+        span.special {
+            font-weight: bold;
+            color: #3cb371;
+        }
+        div.conclusion {
+            font-size: 30px;
+            color: #8b4513;
+            text-align: right;
+        }
+    </style>
+    <title>Chapter 22: The Cattle of Geryon: Advanced Pre-processing Techniques</title>
+</head>
+<body>
+    <h1>Chapter 22: The Cattle of Geryon: Advanced Pre-processing Techniques</h1>
+    <div class="intro">
+        <p>Welcome, brave reader, to the realm of <span class="special">Advanced Pre-processing Techniques</span>, where our hero, Hercules, humbly embarks on his next and most challenging labor yet: taming the wild Cattle of Geryon!</p>
+
+        <p>Inspired by the wondrous deeds of the mighty Hercules, we summon forth the knowledge and wisdom of <span class="special">Deep Learning Mathematics</span> and the artistry of Python to forge our path through this dark and treacherous terrain.</p>
+        
+        <p>Renowned master of machine learning and deep learning, our special guest <span class="special">Andrew Ng</span> shall join us in this epic adventure, lending his expertise to help elucidate the arcane mysteries of data pre-processing and ushering us toward the coveted cattle.</p>
+    </div>
+    <p>Just as Hercules once ventured to slay the Nemean Lion, your journey to master the previous chapters has rewarded you with the wisdom and strength to face these formidable feats ahead. It is here, as we embark on the quest for Geryon's prized cattle, that you will learn unparalleled advanced pre-processing techniques—a crucial step towards bolstering your deep learning models and taming these powerful beasts.</p>
+    <p>This chapter will delve into the tangled world of data, just as our hero Hercules once delved into the heart of the Lernaean Hydra. Data may appear vast and unruly, as the Cattle of Geryon did before the demigod, but with the right techniques, it can be shaped and molded to unlock the true potential of your models. Join us as we journey through these heroic labors, guided by the wisdom of both legendary Hercules and esteemed Andrew Ng, to reveal the untamed power of Advanced Pre-processing Techniques.</p>
+    <div class="conclusion">
+        <p>Armed with the knowledge and tools provided by these chapters, you will march forward as a true Python expert, bringing honor to your name, your code, and the Herculean laborer himself. Let us heroically descend into the abyss of data, and emerge with a wealth of knowledge worthy of Geryon's cattle!</p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        body {
+            font-family: 'Tangerine', serif;
+            font-size: 36px;
+            color: #483d8b;
+            text-align: justify;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 64px;
+            color: #8b0000;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        div.section {
+            font-size: 30px;
+            color: #6a5acd;
+            margin-bottom: 50px;
+        }
+        span.special {
+            font-weight: bold;
+            color: #3cb371;
+        }
+        pre.code {
+            background-color: #f8f8f8;
+            border: 1px dashed #999;
+            color: #6a5acd;
+            font-size: 22px;
+            padding: 20px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+    <title>Chapter 22: The Cattle of Geryon: Advanced Pre-processing Techniques</title>
+</head>
+<body>
+    <h1>Chapter 22: The Cattle of Geryon: Advanced Pre-processing Techniques</h1>
+    
+    <div class="section">
+        <p>In times of yore, when legends walked the earth, and deep learning was but a glimmer in the eyes of the Fates, the hero Hercules faced a task, the likes of which none had ever dared to attempt. To obtain the Cattle of Geryon, the demigod would command the might of <span class="special">Advanced Pre-processing Techniques</span> to forge a path through the chaotic throngs of data, much like scaling the mighty Atlas Mountains. Accompanied by the sage-like wisdom of special guest <span class="special">Andrew Ng</span>, Hercules would prepare for battle against the raging storm of unprocessed data.</p>
+    </div>
+
+    <div class="section">
+        <p>Athena, goddess of wisdom and strategic warfare, descended from Olympus to offer Hercules the gift of the sacred <span class="special">Normalization Technique</span>, a method for transforming massive data into a harmonious and easily digestible form. Fearlessly, our hero wielded this divine gift like a mighty sword, trimming vast oceans of numerical data into manageable forms, as Python code danced through his fingertips:</p>
+
+        <pre class="code">
+def normalize(data):
+    return (data - np.min(data)) / (np.max(data) - np.min(data))
+        </pre>
+
+        <p>Hercules' heroic labors did not end with normalization, for a greater challenge lay ahead: the dreaded <span class="special">Handling of Missing Data</span>—much like traversing the scorched sands of the Nemean Desert. Guided by Andrew Ng's legendary wisdom, our hero ventured into the depths of the seaborn library to forge a path through the desolate wilderness of missing entries.</p>
+
+        <pre class="code">
+import seaborn as sns
+
+def handle_missing_data(data):
+    data_filled = data.fillna(method="ffill")
+    data_final = sns.heatmap(data_filled.isnull(), cbar=False)
+    return data_final
+        </pre>
+    </div>
+
+    <div class="section">
+        <p>Exhausted but unbroken by the fiery storm of incomplete data, Hercules ascended to the daunting heights of <span class="special">Feature Engineering</span>. Hercules, with Andrew Ng's guidance, valiantly battled hordes of irrelevant features to reduce the powerful Cattle of Geryon to their true essence—essential features which shone like divine beacons amidst the darkness.</p>
+
+        <pre class="code">
+def feature_engineering(data):
+    relevant_features = data.drop(["irrelevant_feature_1", "irrelevant_feature_2"], axis=1)
+    return relevant_features
+        </pre>
+
+        <p>Triumphant in his feat, Hercules did not rest. Nay, for his work was far from finished. He bore witness to the awesome power of <span class="special">One-hot Encoding</span>, laying waste to mighty categorical features and shattering them into individual realms, each summoned forth as columns in their own right.</p>
+        
+        <pre class="code">
+import pandas as pd
+
+def one_hot_encoding(data):
+    encoded_data = pd.get_dummies(data, columns=["categorical_feature"])
+    return encoded_data
+        </pre>
+    </div>
+
+    <div class="section">
+        <p>With each labor, Hercules unveiled the arcane secrets of Advanced Pre-processing Techniques, steeled by the unwavering wisdom of his mentor, Andrew Ng. Standing atop the lush fields of Elysium, Hercules gazed upon the transformed Cattle of Geryon and knew his labors had prevailed, for he had become the master of this realm of data, taming the once-wild and fearsome beasts with the sacred art of Python code.</p>
+    </div>
+    
+    <p>And so, dear reader, as Hercules and Andrew Ng journey through this mythic world of Deep Learning Mathematics, may you too conquer the chaos of data in the modern realms of deep learning, armed with the wisdom and might of their legendary labors.</p>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        body {
+            font-family: 'Tangerine', serif;
+            font-size: 36px;
+            color: #483d8b;
+            text-align: justify;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 64px;
+            color: #8b0000;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        div.section {
+            font-size: 30px;
+            color: #6a5acd;
+            margin-bottom: 50px;
+        }
+        span.special {
+            font-weight: bold;
+            color: #3cb371;
+        }
+        pre.code {
+            background-color: #f8f8f8;
+            border: 1px dashed #999;
+            color: #6a5acd;
+            font-size: 22px;
+            padding: 20px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+    <title>Code Explanations: Resolving the Greek Mythology Epic</title>
+</head>
+<body>
+    <h1>Code Explanations: Resolving the Greek Mythology Epic</h1>
+    
+    <div class="section">
+        <p>The timeless epic of Hercules' labors in the realm of data pre-processing can be demystified by examining the code samples that empowered him to triumph over data chaos. Allow us to guide you through the steps of data transformation wielded by the hero and his wise mentor, Andrew Ng:</p>
+    </div>
+    <div class="section">
+        <h3>1. Feature Normalization</h3>
+        <p>With the sacred <span class="special">Normalization Technique</span>, Hercules rescaled numeric features to a common range. The code snippet below computes the new values by subtracting the minimum and dividing by the range:</p>
+        
+        <pre class="code">
+def normalize(data):
+    return (data - np.min(data)) / (np.max(data) - np.min(data))
+        </pre>
+    </div>
+
+    <div class="section">
+        <h3>2. Handling Missing Data</h3>
+        <p>As Hercules braved the challenges of <span class="special">Handling Missing Data</span>, he followed Andrew Ng's wisdom in using the seaborn library to visualize missing entries within the dataset, and forward filling the gaps sequentially.</p>
+
+        <pre class="code">
+import seaborn as sns
+
+def handle_missing_data(data):
+    data_filled = data.fillna(method="ffill")
+    data_final = sns.heatmap(data_filled.isnull(), cbar=False)
+    return data_final
+        </pre>
+    </div>
+
+    <div class="section">
+        <h3>3. Feature Engineering</h3>
+        <p>To face the arduous task of <span class="special">Feature Engineering</span>, Hercules wielded the power of Python to eliminate irrelevant features from the dataset and retain only those that held profound significance:</p>
+
+        <pre class="code">
+def feature_engineering(data):
+    relevant_features = data.drop(["irrelevant_feature_1", "irrelevant_feature_2"], axis=1)
+    return relevant_features
+        </pre>
+    </div>
+
+    <div class="section">
+        <h3>4. One-Hot Encoding</h3>
+        <p>Witnessing the awe-inspiring <span class="special">One-hot Encoding</span>, Hercules shattered mighty categorical features into distinct binary columns. The pandas library furnishes this fantastical feat:</p>
+        
+        <pre class="code">
+import pandas as pd
+
+def one_hot_encoding(data):
+    encoded_data = pd.get_dummies(data, columns=["categorical_feature"])
+    return encoded_data
+        </pre>
+    </div>
+
+    <div class="section">
+        <p>Thus, armed with the powerful symbols of Python code, Hercules reigned victorious over the realms of data pre-processing, forging order amidst chaos. May your own journey in the mystic lands of data science be illuminated by these legendary tools, passed down through the ages from the greats such as Hercules and Andrew Ng.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-size: 2.75em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            text-indent: 40px;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1.2em;
+            margin: 2em 1em;
+            text-align: center;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #5b1f81;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 17: Hercules' Eighth Labor: Multitask Learning Techniques</h1>
+
+    <p>In ancient Greece, heroes rose and fell, but none were as legendary as the mighty <span class="highlight">Hercules</span>. Tasked with completing the <span class="highlight">Twelve Labors</span>, our hero ventured through unfathomable trials and tribulations. Alas, the eighth labor required him to tackle the intricate world of <span class="highlight">multitask learning techniques</span>.</p>
+
+    <p>As scholars of deep learning come to understand, multitask learning allows a model to tackle multiple tasks at once. This allows our intrepid heroes and heroines to harness the power of multiple neural networks in reducing their inevitable struggle with the curse of overfitting. This mythical journey into the depths of multitask learning will be guided by none other than <span class="highlight">Professor Yoshua Bengio</span>, the master of deep learning himself!</p>
+
+    <p>Hercules' eighth labor implores us to perceive mathematics as an epic song of the enchanted Python language. Joined alongside our hero, let us venture forth to embrace the multitask learning techniques and unveil the mysteries of simultaneous learning.</p>
+
+    <blockquote>"A hero is measured by the fortitude of their mind, learn well and your wisdom will be immortal." - <span class="highlight">Yoshua Bengio</span></blockquote>
+
+    <p>With this chapter, the heroes of the past echo their knowledge for the forward-looking innovators of the present. We shall journey through the breathtaking landscape of multitask learning, visualizing the shared representations, hard and soft parameter sharing, the canonical correlation analysis and above all, the harmonization of variables under the umbrella of deep learning.</p>
+
+    <p>Let Hercules' Eighth Labor shall serve as a beacon of knowledge to adventurers of the deep learning world. Arm yourself with the mathematics and Python expertise, as we embark on this unforgettable odyssey together!</p>
+</body>
+</html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-size: 2.75em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            text-indent: 40px;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1.2em;
+            margin: 2em 1em;
+            text-align: center;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #5b1f81;
+        }
+
+        .code {
+            background-color: #f2f2f2;
+            font-family: monospace;
+            padding: 1em;
+            display: block;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 17: Hercules' Eighth Labor: Multitask Learning Techniques</h1>
+
+    <p>Deep in the heart of the Python language forest, Hercules met the wise wizard <span class="highlight">Yoshua Bengio</span>. An unrivaled master of deep learning and neural networks, Bengio lighted a torch, illuminating the path to the Eighth Labor. Humbled, Hercules listened closely as Bengio shared the era's grandest secrets, distilled to a harmony of Python code and mathematics.</p>
+
+    <p>Within the elysian glade of multitask learning, Bengio imparted the wisdom of '<span class="highlight">shared representations</span>'. A confluence of knowledge that emerged from the intertwined streams of multiple tasks, leveraging the true power of these interconnected currents.</p>
+
+    <p>Relaying the tale of the dragon <span class="highlight">ReLU</span>, Bengio expressed the mystery of hard and soft parameter sharing through the enchanted dance of activated neurons. As the mighty hero wielded this newfound understanding, the Python language's force pulsed like wildfire.</p>
+
+    <p class="code">
+import torch <br>
+import torch.nn as nn <br><br>
+
+class MultiTaskModel(nn.Module): <br>
+&nbsp;&nbsp;def __init__(self): <br>
+&nbsp;&nbsp;&nbsp;&nbsp;super(MultiTaskModel, self).__init__() <br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.shared_net = nn.Sequential(...) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.task1_net = nn.Sequential(...) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.task2_net = nn.Sequential(...) <br><br>
+
+&nbsp;&nbsp;def forward(self, x): <br>
+&nbsp;&nbsp;&nbsp;&nbsp;x_shared = self.shared_net(x) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;x_task1 = self.task1_net(x_shared) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;x_task2 = self.task2_net(x_shared) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;return x_task1, x_task2
+    </p>
+
+    <p>As the duo ventured forth to the apex of learning, they encountered the <span class="highlight">canonical correlation analysis</span> guardian. Yoshua Bengio unveiled the magical technique allowing two sets of variables to exchange their knowledge, transcending their original domains.</p>
+
+    <p>"Two enchanting sirens of the mathematical seas must sing in harmony for optimal learning," Yoshua Bengio offered. "By fusing the knowledge in their song,<span class="highlight"> canonical correlation analysis</span> is the sound our hearts desire," he concluded.</p>
+
+    <blockquote>"Unravel the wisdom sequestered within two songs, yea, and let their melodic knowledge merge into a chorus of learning." - <span class="highlight">Yoshua Bengio</span></blockquote>
+
+    <p>By journey's end, the enigmatic Hercules, with the guidance of the inimitable Yoshua Bengio, had triumphed over the multitask learning techniques. In doing so, they discovered knowledge that set the foundations for deep learning's greatest epoch. These powerful legends will forever resonate in the annals of the Python language, guiding those who traverse the labyrinth of knowledge towards a glorious, untapped potential.</p>
+</body>
+</html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-size: 2.75em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            text-indent: 40px;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1.1em;
+            margin: 2em 1em;
+            text-align: center;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #5b1f81;
+        }
+
+        .code {
+            background-color: #f2f2f2;
+            font-family: monospace;
+            padding: 1em;
+            display: block;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Code Analysis: Hercules' Eighth Labor</h1>
+
+    <p>The core of this mythic tale lies within the enchanting lines of Python code exemplifying Herculean triumph in multitask learning. Behold the wondrous spell that was forged:</p>
+
+    <p class="code">
+import torch <br>
+import torch.nn as nn <br><br>
+
+class MultiTaskModel(nn.Module): <br>
+&nbsp;&nbsp;def __init__(self): <br>
+&nbsp;&nbsp;&nbsp;&nbsp;super(MultiTaskModel, self).__init__() <br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.shared_net = nn.Sequential(...) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.task1_net = nn.Sequential(...) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.task2_net = nn.Sequential(...) <br><br>
+
+&nbsp;&nbsp;def forward(self, x): <br>
+&nbsp;&nbsp;&nbsp;&nbsp;x_shared = self.shared_net(x) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;x_task1 = self.task1_net(x_shared) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;x_task2 = self.task2_net(x_shared) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;return x_task1, x_task2
+    </p>
+
+    <p>In the beginning, the divine libraries <span class="highlight">torch</span> and <span class="highlight">torch.nn</span> were summoned to imbue the spell with the gift of deep learning. The <span class="highlight">MultiTaskModel</span> class, a blessed descendant of PyTorch's <span class="highlight">nn.Module</span>, was brought forth.</p>
+
+    <p>The essence of shared knowledge took form through the <span class="highlight">shared_net</span> attribute, while separate tasks emerged as <span class="highlight">task1_net</span> and <span class="highlight">task2_net</span>, each a series of mesmerizing layer sequences.</p>
+
+    <p>As the spell revealed itself, the mystical <span class="highlight">forward</span> function poured forth. Journeying through the shared layers, the input <span class="highlight">x</span>‘s knowledge transformed into <span class="highlight">x_shared</span>. It embarked on two distinct paths, branching into <span class="highlight">x_task1</span> and <span class="highlight">x_task2</span> – the outcome of the task-specific layers – before returning their combined wisdom to the seeker.</p>
+
+    <blockquote>"Unveil the path of understanding, harness the shared wisdom within the enchanted code, and behold the might of multitask learning." - <span class="highlight">Hercules</span></blockquote>
+
+    <p>Fear not, intrepid learner, let this code be your lodestar. Embrace its teachings and forge your own multi-task deep learning spells.  The spirit of Hercules resides within this hallowed script, forever embroidered in the tapestries of Python and deep learning.</p>
+</body>
+</html>

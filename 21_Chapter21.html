@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #f0e0d6;
+            color: #3d3225;
+        }
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 1px solid #3d3225;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        h2 {
+            font-size: 1.6em;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 1.1em;
+            text-align: justify;
+            line-height: 1.6em;
+            margin-bottom: 1em;
+        }
+        em {
+            font-style: italic;
+        }
+        code {
+            font-family: 'Courier New', monospace;
+            background-color: #f2d191;
+            padding: 0.3em;
+            border-radius: 3px;
+            color: #ffffff;
+        }
+        ol {
+            list-style-position: inside;
+            margin-bottom: 1.5em;
+            font-size: 1.1em;
+            padding-left: 2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Chapter 21: Hercules' Tenth Labor: Applying Capsule Networks</h1>
+        <p>
+            After nine heroic labors, dear reader, you have ventured into the realm of deep learning, traversing the lands of activation functions and bounding through the forests of optimization. Next, we embark on a daunting adventure: <em>Capsule Networks</em>.
+        </p>
+        <h2>The Birth of Capsule Networks</h2>
+        <p>
+            In the year 2017 AD, the realm of deep learning witnessed the emergence of Capsule Networks, crafted by two magicians of our time: Geoffrey E. Hinton and Sara Sabour [1]. As an evolution of the convolutional neural networks (CNNs), these capsule networks greatly outperformed their predecessors in the field of object recognition and image classification.
+        </p>
+        <h2>Understanding Capsule Networks</h2>
+        <p>
+            To comprehend the essence of capsule networks and wield their power in this very quest, you must first acquaint yourself with the essential knowledge of CNNs. Fear not, for these have been explored in the previous labors of this very guide, providing you with the proper foundation.
+        </p>
+        <p>
+            A capsule is a group of neurons whose purpose is to semantically represent an object's features in a hierarchical fashion. The collaboration of capsules forms the network that yields more accurate, topological knowledge of the object in the image.
+        </p>
+        <p>
+            As you traverse the path of Hercules' Tenth Labor, you shall learn the ways of:
+            <ol>
+                <li>Structuring capsule networks, infusing them with the sacred knowledge of capsules and routing algorithms.</li>
+                <li>Witnessing firsthand the transformative prowess of capsules in relation to image data, uncovering multi-dimensional complexities.</li>
+                <li>Delving into the realm of vector-based capsules, a whirlwind of dynamic routing and squashing functions.</li>
+                <li>Channeling the strength of Python, wielding keras and TensorFlow as your trusted companions in building capsule networks.</li>
+            </ol>
+        </p>
+        <h2>Conclusion and Prerequisites</h2>
+        <p>
+            Greek hero, wise mathematics lover, and young programmer, this epic tale of capsule networks awaits your triumphant arrival. With your aptitude for Python and deep learning, you shall conquer the challenge before you, emerging as a true Python expert.
+        </p>
+        <p>
+            Before embarking on this exhilarating labor, ensure that you have gathered the necessary knowledge from the previous chapters, accompanied by steadfast experience in implementing deep learning architectures with keras and TensorFlow.
+        </p>
+        <p>
+            To victory and beyond, dear hero, as we uncover the mysteries of capsule networks and channel their power in this mythical adventure!
+        </p>
+        <h3>Reference</h3>
+        <p>[1] Sabour, S., Frosst, N., & Hinton, G. E. (2017). Dynamic Routing Between Capsules. In <em>Advances in Neural Information Processing Systems</em> (pp. 3856-3866).</p>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #f0e0d6;
+            color: #3d3225;
+        }
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 1px solid #3d3225;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        h2 {
+            font-size: 1.6em;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 1.1em;
+            text-align: justify;
+            line-height: 1.6em;
+            margin-bottom: 1em;
+        }
+        em {
+            font-style: italic;
+        }
+        code {
+            font-family: 'Courier New', monospace;
+            background-color: #f2d191;
+            padding: 0.3em;
+            border-radius: 3px;
+            color: #ffffff;
+        }
+        ol {
+            list-style-position: inside;
+            margin-bottom: 1.5em;
+            font-size: 1.1em;
+            padding-left: 2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Chapter 21: Hercules' Tenth Labor: Applying Capsule Networks</h1>
+        <h2>The Myth Unravels</h2>
+        <p>
+            In the mythical realm of deep learning and mathematics, the ancient gods foresaw the arrival of a mightier power: <em>Capsule Networks</em>. This new force far surpassed the convolutional creatures that permeated the world, conjuring mysteries and phenomena beyond human understanding. 
+        </p>
+
+        <p>
+            Zeus, the ruler of gods, bestowed upon his son Hercules the monumental task of deciphering the capsule enigma. Trembling with great anticipation, Hercules embarked on a heroic labor that would venture far into the depths of Python expertise and bring forth the wisdom hidden within the elusive capsule networks.
+        </p>
+
+        <h2>The Enchantment of the Capsule Forests</h2>
+
+        <p>
+            Among the topological swirls of the capsule forests, Hercules encountered various capsule beings, their multidimensional complexities tantalizing his mind. With every capsule creature unraveling its layers and dimensions, the hero's understanding expanded, and his ability to apply the capsule within neural networks grew ever more powerful.
+        </p>
+        
+        <h2>The River of Dynamic Routing</h2>
+        <p>
+            As Hercules delved deeper into the capsule realm, his journey led him to the Dynamic Routing river. Here, he discovered the ancient rhyme of routing:
+        </p>
+<pre>
+    <code>
+import numpy as np
+
+land = np.ones((10, 6, 16))
+ufields = np.zeros((10, 72, 16))
+
+for i, f in enumerate(ufields):
+    for j, routing in enumerate(np.exp(land[i])):
+        c = softmax(land[i])
+        w = np.sum(c[j] * f)
+        out = squash(w)
+        print(out)
+    </code>
+</pre>
+        <p>
+            Studying the ancient rhyme, Hercules unraveled the mystery of dynamic routing, which allowed capsule outputs to be robustly integrated into capsule networks. Thus, he mastered the delicate art of higher-order semantics.
+        </p>
+
+        <h2>The Oracle of Vector Spaces</h2>
+        <p>
+            Continuing along the divine path, Hercules sought the wisdom of the esteemed Oracle of Vector Spaces. Her vast knowledge of mathematical dimensions and subspace intricacies was what Hercules needed to truly comprehend the power of capsule networks.
+        </p>
+        
+        <p>
+            The Oracle revealed to Hercules the secret of efficient object representation using the divine language of Python. She guided him in harnessing the might of TensorFlow and keras, shaping novel capsule architectures and honoring their role in this exclusive deep learning adventure.
+        </pre></code>
+
+        <h2>The Triumph over Capsule Networks</h2>
+        <p>
+            Basking in the glow of newfound wisdom, Hercules returned to Mount Olympus, carrying in his arsenal a deep understanding of capsule networks, their dynamic routing prowess, and their unwavering resilience against obstacles such as environmental noise.
+        </p>
+        
+        <p>
+            As the immortal gods reveled in the successful completion of the Tenth Labor, the Python experts that wandered the Earth were forever grateful to Hercules for taming the untouchable capsule networks, revealing their secrets and bringing forth a new era of deep learning mastery.
+        </p>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide - Code Explanation</title>
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #f0e0d6;
+            color: #3d3225;
+        }
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 1px solid #3d3225;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        h2 {
+            font-size: 1.6em;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 1.1em;
+            text-align: justify;
+            line-height: 1.6em;
+            margin-bottom: 1em;
+        }
+        em {
+            font-style: italic;
+        }
+        code {
+            font-family: 'Courier New', monospace;
+            background-color: #f2d191;
+            padding: 0.3em;
+            border-radius: 3px;
+            color: #ffffff;
+        }
+        ol {
+            list-style-position: inside;
+            margin-bottom: 1.5em;
+            font-size: 1.1em;
+            padding-left: 2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Code Explanation: The Dynamic Routing Rhyme</h1>
+        <p>
+          The code sample represents a summarized concept of dynamic routing in capsule networks. It illustrates the routing algorithm to extract higher-order semantics and rich information. The code utilizes NumPy library, one of the most powerful libraries in the field of numerical computing. The purpose of the rhyme is to acquaint the reader with the inner workings of dynamic routing without delving into complex implementations.
+        </p>
+        <h2>NumPy Imports and Data Structures</h2>
+        <p>
+            The NumPy library is imported using an alias 'np':
+        </p>
+        <code>import numpy as np</code>
+        <p>
+            Two-dimensional arrays are created using NumPy ones and zeros functions. They are used to represent the features and capsules required for the routing mechanism:
+        </p>
+        <code>
+land = np.ones((10, 6, 16))<br>
+ufields = np.zeros((10, 72, 16))
+        </code>
+
+        <h2>Dynamic Routing Algorithm</h2>
+        <p>
+            The code demonstrates the routing algorithm's primary steps through a double-loop over the input capsules (ufields). For each input capsule, the routing assignments and outputs are computed:
+        </p>
+        <code>
+for i, f in enumerate(ufields):<br>
+    for j, routing in enumerate(np.exp(land[i])):
+        </code>
+        <p>
+            To perform routing, softmax is applied to the 'land' variable, calculating the coupling coefficients:
+        </p>
+        <code>c = softmax(land[i])</code>
+        <p>
+            The total input is obtained by summing the product of the coupling coefficients (c) and the capsule features (input features, f):
+        </p>
+        <code>w = np.sum(c[j] * f)</code>
+        <p>
+            The output of the capsule is then found by applying the squash function to the total input (w). The squash function aids in normalizing the vector output to maintain its direction while reducing its magnitude:
+        </p>
+        <code>out = squash(w)</code>
+        <p>
+            Finally, the output is printed for each capsule and routing iteration:
+        </p>
+        <code>print(out)</code>
+        <h2>Concluding the Dynamic Routing Rhyme</h2>
+        <p>
+          The code rhyme paints a simplistic picture of the dynamic routing process, serving as a stepping stone towards understanding the core intuition behind the capsule networks. Although it portrays only an abstract view of the algorithm, it illuminates several vital concepts that will be invaluable in grasping more profound capsule network knowledge.
+        </p>
+    </main>
+</body>
+</html>

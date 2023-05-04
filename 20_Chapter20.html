@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 20: The Girdle of Hippolyta - Interpretable and Explainable AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #454545;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #336699;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.9rem;
+            color: #336699;
+            text-align: left;
+        }
+        p {
+            text-align: justify;
+        }
+        strong {
+            font-weight: 600;
+        }
+        blockquote {
+            font-style: italic;
+            margin: 1.5rem 0;
+            padding: 2rem 2.5rem;
+            background-color: #f6f6f6;
+            border-radius: 5px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+        }
+        pre {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.1rem;
+            background-color: #f6f6f6;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 20: The Girdle of Hippolyta - <br>Interpretable and Explainable AI</h1>
+    <p><strong>Twelve Labors</strong>, a wondrous tale, in deep learning's realm,
+    with Hercules, Python, and wisdom at the helm.
+    In this new chapter, the story unfolds,
+    A <strong>Girdle of Knowledge</strong> their eloquence beholds.</p>
+
+    <blockquote>And so the brave Hercules approached the Queen to acquire an understanding of her enchanted girdle, the essence of Interpretable and Explainable Artificial Intelligence, twined with knowledge and wisdom, sought by many but understood by few.</blockquote>
+
+    <p>Beloved reader, you've ventured well,
+    Unraveling secrets; in math, you now excel.
+    The girdle you seek, may not be easy to find,
+    But as Hercules knows, it's invaluable in kind.</p>
+
+    <p>Interpretable and explainable AI be our quest,
+    Clear understanding, our ultimate request.
+    A model's decision we aim to dissect,
+    Its <strong>predictions</strong> and <strong>reasoning</strong>, to introspect.</p>
+
+    <p>In your deep learning journey, you've surpassed great nodes,
+    But do not fall victim to the siren's abodes.
+    As you tackle this labor, forever recall,
+    Hercules, still strong, but to hubris, don't fall.</p>
+
+    <h2>An Odyssey of Learning</h2>
+    <p>In the realm of the <em>very deep</em>, you'll encounter tools,
+    Equipping your knowledge, breaking the rules.
+    With <strong>LIME</strong> and <strong>SHAP</strong>, new paths we'll explore,
+    Demystifying models; understanding at the core.</p>
+
+    <pre>
+import lime
+import shap
+    </pre>
+
+    <p>So grab your shield, and sharpen your lance,
+    Another adventure in learning will soon commence.
+    With Hercules by your side, you'll dominate depths,
+    Growing ever wiser, with each step so adept.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 20: The Girdle of Hippolyta - Interpretable and Explainable AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #454545;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #336699;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.9rem;
+            color: #336699;
+            text-align: left;
+        }
+        p {
+            text-align: justify;
+        }
+        strong {
+            font-weight: 600;
+        }
+        blockquote {
+            font-style: italic;
+            margin: 1.5rem 0;
+            padding: 2rem 2.5rem;
+            background-color: #f6f6f6;
+            border-radius: 5px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+        }
+        pre {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.1rem;
+            background-color: #f6f6f6;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        ol, ul {
+            padding-left: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 20: The Girdle of Hippolyta - <br>Interpretable and Explainable AI</h1>
+
+    <h2>The Story Begins</h2>
+    <p><strong>Hercules the Bold</strong>, his mission grand,
+    He ventured so bravely to a distant land.
+    Queen Hippolyta's girdle, this hero sought,
+    To understand deep learning's thoughts.</p>
+
+    <p>In the court of Hippolyta, a grand affair,
+    Hercules listened closely to wisdom rare.
+    The Queen spoke of AI, complex to see,
+    But she had precious tools to set knowledge free.</p>
+
+    <blockquote>From the girdle's threads, explained the Queen, emerge two powerful tools: LIME and SHAP! With them, warriors shall demystify any deep learning model, from convolutional to recurrent networks. On this path, you'll find Math and Python, allies in harmony.</blockquote>
+
+    <h2>LIME, A Luminous Gem</h2>
+    <p>Through LIME, a brilliant gem so bright,
+    <strong>Local Interpretable Model-Agnostic Explanations</strong>, its light.
+    Ribeiro, Singh, Guestrin (<em>Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</em>, 2016) be its creators,
+    Heroes of modern era, wisdom cravers.</p>
+
+    <p><strong>"For every data point,"</strong> the Queen decreed,
+    <strong>"A linear model with weights you can read,</strong>
+    Approximate your model and see how it fared,
+    Understand its choices through features compared."</strong></p>
+
+    <blockquote>With Python's grace, install the LIME library,</blockquote>
+
+    <pre>
+!pip install lime
+    </pre>
+
+    <h2>SHAP, A Fearsome Blade</h2>
+    <p>Next in the girdle, a weapon so sharp,
+    A blade called SHAP, to illuminate the dark.
+    <strong>SHapley Additive exPlanations</strong>, it roared,
+    To visualize and explain, its power was stored.</p>
+
+    <p>By Lundberg and Lee (<em>NIPS 2017</em>), it was forged,
+    Its technique so clever, from game theory emerged.
+    The library devised from their work,
+    To understand model features, a powerful quirk.</p>
+
+    <p>Queen Hippolyta spoke, her words echoing,
+    <strong>"With SHapley values, subtract and sum, harbing,
+    To find your model's prediction fully explained,
+    Decode its behavior, its wisdom contained."</strong></p>
+
+    <blockquote>Python's prowess leads to SHAP, bestowed with knowledge bright,</blockquote>
+
+    <pre>
+!pip install shap
+    </pre>
+
+    <h2>The Girdle's Wisdom</h2>
+    <p>Our hero, Hercules, knowledge-bound,
+    Learned the secrets of AI, techniques profound.
+    With LIME and SHAP, his knowledge did swell,
+    Defeating the darkness, a tale to tell.</p>
+
+    <p>Now, dear reader, your time has come,
+    To seize these tools, to knowledge succumb.
+    Tame AI, make it yours to command,
+    Continue your journey, with Hercules' hand.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Explanation: The Girdle of Hippolyta - Interpretable and Explainable AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #454545;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #336699;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.9rem;
+            color: #336699;
+            text-align: left;
+        }
+        p {
+            text-align: justify;
+        }
+        strong {
+            font-weight: 600;
+        }
+        blockquote {
+            font-style: italic;
+            margin: 1.5rem 0;
+            padding: 2rem 2.5rem;
+            background-color: #f6f6f6;
+            border-radius: 5px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+        }
+        pre {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.1rem;
+            background-color: #f6f6f6;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        ol, ul {
+            padding-left: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Code Explanation: The Girdle of Hippolyta - <br>Interpretable and Explainable AI</h1>
+
+    <h2>Installing the LIME Library</h2>
+    <p>The first presented code demonstrates how to install the LIME library. With this library, the model's behavior can be explained using local surrogate models.</p>
+
+    <pre>
+!pip install lime
+    </pre>
+
+    <h2>Installing the SHAP Library</h2>
+    <p>Secondly, we introduce the installation of the SHAP library. This implementation reveals the relationship between model features and output via Shapley values for a robust explanation.</p>
+
+    <pre>
+!pip install shap
+    </pre>
+
+    <h2>Moving Forward: Harnessing the Powers of LIME and SHAP</h2>
+    <p>With LIME and SHAP installed, the code from the epic now grants you access to powerful tools that unlock the mysteries of AI models. To further explore their use, you would import the required functions and leverage local surrogate models and Shapley values to decipher your preferred AI model.</p>
+
+    <blockquote>The quest continues, dear reader. May you join Hercules and dive deeper to understand and explain AI predictions, ensuring the responsible use of these tools in the realm of deep learning.</blockquote>
+</body>
+</html>

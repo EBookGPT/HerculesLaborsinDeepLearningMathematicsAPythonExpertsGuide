@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        h1 {
+            font-family: 'Palatino', serif;
+            font-size: 2.5em;
+            text-align: center;
+            padding: 0.5em 0;
+            margin-bottom: 0.3em;
+            color: #6b342a;
+            border-bottom: 4px solid #6b342a;
+        }
+        
+        h2 {
+            font-family: 'Palatino', serif;
+            font-size: 1.6em;
+            text-align: left;
+            padding-left: 0.2em;
+            margin-bottom: 0.2em;
+            color: #5a5a5a;
+            border-left: 4px solid #5a5a5a;
+        }
+        
+        p {
+            text-indent: 2em;
+            margin-bottom: 1.2em;
+        }
+
+        code {
+            font-family: 'Consolas', monospace;
+            background-color: #f4f4f4;
+            padding: 0.2em 0.4em;
+            margin: 0;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Chronicles of Herculean Deep Learning</h1>
+    <h2>Chapter 9: Hercules' Fourth Labor - Mastering Recurrent Neural Networks</h2>
+    <p>Oh holder of tales, lend thy ears, as we embark upon the journey of revelations, transcending the realms of human
+        intelligence. In the land of Mount Olympus, wise Zeus had given <em>Hercules</em>, the half-god,
+        half-mortal, a vivid mission: to become a seeker of deep learning wisdom.</p>
+    <p>And so, as Hercules continued his voyage, he touched the shores of wisdom through his
+        previous trials: taming the Linear Regression beast, conquering the daunting depths of Convolutional Neural
+        Networks, and winning the battle against the mighty Multi-Layer Perceptron. His path gleamed in the glories,
+        yet his thirst for knowledge knew no bounds.</p>
+    <p>In this chronicle, we follow Hercules as he takes on his next monumental task, his <strong>Fourth
+            Labor</strong>: to master the enigmatic powers of Recurrent Neural Networks or
+        <code>RNNs</code>. These mysterious neural networks are much like legends whispered between learned scholars,
+        for they hold the keys to unlocking the secrets of sequences in data.</p>
+    <p>Delving into this brave new quest, Hercules encounters the realm of time series, speech recognition, sentiment
+        analysis, and more. Unraveling the myths and revealing the truth of RNNs, he transforms himself into a Python
+        expert, striking the perfect balance between mathematics and deep learning.</p>
+    <p>Dear reader, if thou dost dare embark on this journey with Hercules, brace thyself for an epic tale of trials
+        and triumphs, where equations are unraveled, and Python code proves its might, as we journey forth into the
+        mysteries of <strong>Mastering Recurrent Neural Networks</strong>.</p>
+</body>
+
+</html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            font-family: 'Palatino', serif;
+            font-size: 2.5em;
+            text-align: center;
+            padding: 0.5em 0;
+            margin-bottom: 0.3em;
+            color: #6b342a;
+            border-bottom: 4px solid #6b342a;
+        }
+
+        h2 {
+            font-family: 'Palatino', serif;
+            font-size: 1.6em;
+            text-align: left;
+            padding-left: 0.2em;
+            margin-bottom: 0.2em;
+            color: #5a5a5a;
+            border-left: 4px solid #5a5a5a;
+        }
+
+        p {
+            text-indent: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+        }
+
+        code {
+            font-family: 'Consolas', monospace;
+            background-color: #f4f4f4;
+            padding: 0.2em 0.4em;
+            margin: 0;
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>The Chronicles of Herculean Deep Learning</h1>
+    <h2>Chapter 9: Hercules' Fourth Labor - Mastering Recurrent Neural Networks</h2>
+    <p>Once upon a time, in the battle of classic Feed-Forward Neural Networks, the valiant Hercules' third victory was
+        celebrated. But Hera, his stepmother and Zeus' cherished wife, chose to test Hercules; the stakes were raised,
+        and the challenge to master Recurrent Neural Networks was at hand.</p>
+    <p>Hera sent to Hercules the mighty oracle, Pythia, who spoke in code.</p>
+    <code>import numpy as np</code><br>
+    <code>import pandas as pd</code><br>
+    <code>from keras.models import Sequential</code><br>
+    <code>from keras.layers import Dense, SimpleRNN</code><br>
+    <p>Armed with Pythia's code, Hercules embarked on his journey to grasp the secrets of Recurrent Neural Networks,
+        beginning with the understanding of sequential data.</p>
+    <p>Hercules realized that while Feed-Forward Neural Networks were perfect for static inputs, they lacked the prowess
+        to resonate with data depicting temporal dependencies. It was then he understood the essence of the RNN's and
+        began crafting a solution for the land of sequences.</p>
+    <code>model = Sequential()</code><br>
+    <code>model.add(SimpleRNN(4, input_shape=(10, 1)))</code><br>
+    <code>model.add(Dense(1))</code><br>
+    <code>model.compile(loss='mean_squared_error', optimizer='adam')</code><br>
+    <p>With his model brewing, Hercules learned of the power to unfurl memory in time - the Vanishing and Exploding
+        Gradients. To tame the volatile memory, he sought the wisdom of LSTM (Long Short-Term Memory) and GRUs (Gated
+        Recurrent Units) - guardians of neural realms.</p>
+    <code>from keras.layers import LSTM, GRU</code><br>
+    <code>model.add(LSTM(4, input_shape=(10, 1)))</code><br>
+    <code>model.add(GRU(4, input_shape=(10, 1)))</code><br>
+    <p>And thus, with the guardians by his side, the code derived its strength from the union of LSTM and GRU's:
+    </p>
+    <code>model.compile(loss='mean_squared_error', optimizer='adam')</code><br>
+    <code>model.fit(X_train, y_train, epochs=100, batch_size=1)</code><br>
+    <code>y_predicted = model.predict(X_test)</code><br>
+    <p>Emboldened by the power to wrestle the complex temporal dependencies, Hercules vanquished the limitations that
+        bound the classic neural networks. Enshrined with the wisdom of Recurrent Neural Networks, he emerged
+        victorious, bringing his fourth labor to completion.</p>
+    <p>Dear reader, let this tale not end here; instead, may it be the beginning of your triumphs. Embrace the legacy of
+        Hercules and master the enigmatic powers of Recurrent Neural Networks yourself. Venture forth and conquer the
+        challenges laid out, for it is certain that there are greater adventures that lie ahead.</p>
+</body>
+
+</html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hercules' Labors in Deep Learning Mathematics: A Python Expert's Guide</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            font-family: 'Palatino', serif;
+            font-size: 2.5em;
+            text-align: center;
+            padding: 0.5em 0;
+            margin-bottom: 0.3em;
+            color: #6b342a;
+            border-bottom: 4px solid #6b342a;
+        }
+        
+        h2 {
+            font-family: 'Palatino', serif;
+            font-size: 1.6em;
+            text-align: left;
+            padding-left: 0.2em;
+            margin-bottom: 0.2em;
+            color: #5a5a5a;
+            border-left: 4px solid #5a5a5a;
+        }
+
+        p {
+            text-indent: 2em;
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+        }
+
+        code {
+            font-family: 'Consolas', monospace;
+            background-color: #f4f4f4;
+            padding: 0.2em 0.4em;
+            margin: 0;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Decoding the Epic: The Code of Hercules'</h1>
+    <h2>Recurrent Neural Networks</h2>
+    <p>In the tale of Hercules' fourth labor, the code guided our hero to unearth secrets of Recurrent Neural Networks (RNNs). The voyage began with importing the essential libraries:</p>
+    <code>import numpy as np</code><br>
+    <code>import pandas as pd</code><br>
+    <code>from keras.models import Sequential</code><br>
+    <code>from keras.layers import Dense, SimpleRNN</code><br>
+    <p>Upon these pillars, a sequential RNN model was built:</p>
+    <code>model = Sequential()</code>
+    <p>A simple RNN layer with four hidden units was added to the model. The input shape specified ten timesteps, with a single feature in the input:</p>
+    <code>model.add(SimpleRNN(4, input_shape=(10, 1)))</code>
+    <p>An output Dense layer with a single output was attached so that the whole configuration became:</p>
+    <code>model.add(Dense(1))</code>
+    <p>The model was compiled using Mean Squared Error as the loss function and Adam as the optimizer:</p>
+    <code>model.compile(loss='mean_squared_error', optimizer='adam')</code>
+    <p>As the adventure continued, Hercules encountered the explosive Vanishing and Exploding Gradients. To overcome these foes, our hero sought the guardians LSTM and GRU:</p>
+    <code>from keras.layers import LSTM, GRU</code>
+    <p>LSTM and GRU layers were added with four hidden units each, as replacements to the earlier SimpleRNN:</p>
+    <code>model.add(LSTM(4, input_shape=(10, 1)))</code><br>
+    <code>model.add(GRU(4, input_shape=(10, 1)))</code>
+    <p>The battle plan remained unchanged: compile the model and fit its training data:</p>
+    <code>model.compile(loss='mean_squared_error', optimizer='adam')</code>
+    <p>With the guardians LSTM and GRU in place, Hercules prepared for victory:</p>
+    <code>model.fit(X_train, y_train, epochs=100, batch_size=1)</code>
+    <p>And, finally, having trained the model heroically, predictions were made:</p>
+    <code>y_predicted = model.predict(X_test)</code>
+    <p>Sailing through turmoil and mystery, these commands led Hercules to conquer and master Recurrent Neural Networks, earning his fourth triumph. This chronicle serves as a beacon for those who follow in the footsteps of the great Hercules, unlocking temporal secrets through the power of RNNs.</p>
+</body>
+
+</html>
